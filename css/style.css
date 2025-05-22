@@ -1,0 +1,24 @@
+.alinhamento  {
+    align-content: center; 
+}
+
+
+/*buttons: */
+
+.btn-color {
+    font-size: larger;
+    color:   rgb(17, 94, 194);
+}
+
+.btn-color:hover{
+    background-color: rgb(17, 94, 194);
+    transition: background-color 0.3s ease;
+    color: aliceblue;
+}
+
+
+/*section: */
+
+
+
+
