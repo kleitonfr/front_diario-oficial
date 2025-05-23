@@ -15,7 +15,7 @@
     <div class="w-100">
 
 
-        <header class="d-flex justify-content-center py-3 shadow">
+        <header class="d-flex justify-content-center py-1 shadow">
             <a href="http://caraguatatuba.sp.gov.br/pmc"
                 class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
                 <img src="img/logo-2025.png" class="img-fluid rounded float-start" width="300"
@@ -24,18 +24,18 @@
         </header>
 
         <main>
-            <section class="border-bottom">
+            <section class="border-bottom py-5 bg-light">
 
-                <div class="container">
+                <div class="container mt-5">
                     <div class="row align-items-center">
-                        <div class="col-md-6">
-                            <h1 class=""> Diário</h1>
-                            <h2 class="">Oficial</h2>
-                            <p class="">
+                        <div class="col-lg-6 mb-4 mb-lg-0 text-center text-lg-start">
+                            <h1 class="display-4 fw-bold" style="margin: 50px 0px auto;"> DIÁRIO</h1>
+                            <h2 class="display-1 fw-bolder">OFICIAL</h2>
+                            <h3 class="lead" style="margin:40px auto">
                                 Veículo oficial de publicação, divulgação e comunicação dos atos administrativos da
                                 Prefeitura
                                 Municipal de Caraguatatuba.
-                            </p>
+                            </h3>
 
                             <div>
                                 <button>Última edição</button>
@@ -43,8 +43,12 @@
                             </div>
                         </div>
 
-                        <div class="col-md-6">
-                            <img src="" alt="">
+                        <div class="col-lg-6 text-center">
+                            <div class="d-md-none text-center text-primary fw-bold">Última Edição</div>
+                            <div class="d-md-none text-center fw-bold">Baixe a Ultima edição do diário oficial</div>
+                            <a href="https://www.caraguatatuba.sp.gov.br/pmc/category/diario-oficial/">
+                                <img src="img/edital.jpg" alt="última edição do diário oficial" class="img-fluid shadow rounded">
+                            </a>
                         </div>
 
                     </div>
@@ -56,8 +60,9 @@
                 <form action="cadastro.php" method="post">
                     <fieldset>
                         <legend>Consultar Diário Oficial</legend>
-                        <input type="text" id="palavra_chave" name="palavraChave" placeholder="Nome completo ou palavra-chave">
-                        
+                        <input type="text" id="palavra_chave" name="palavraChave"
+                            placeholder="Nome completo ou palavra-chave">
+
                         <input type="text" id="data_inicial" name="dataInicial" placeholder="Data inicial">
 
                         <input type="text" id="data_final" name="dataFinal" placeholder="Data final">
@@ -65,15 +70,38 @@
 
                     <button>Limpar</button>
                     <button>Consultar</button>
-                    
+
                 </form>
             </section>
         </main>
 
     </div>
 
-    <footer>
+    <footer class="shadow">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <img src="img/logo-2025.png" alt="logo da Prefeitura" width="300">
+                </div>
+                <div class="col-4">
+                    <h5>FALE CONOSCO</h5>
+                    <h5>MAPA DO SITE-PORTAL DA TRANSPARÊNCIA</h5>
+                    <h5>MAPA DO SITE-NOTÍCIAS E SERVIÇOS</h5>
+                </div>
+                <div class="col-4">
+                    <div class="row">
+                        <img class="col-6" src="" alt="">
+                        <h6 class="col-6">NOS SIGA NAS REDES SOCIAIS</h6>
+                    </div>
+                    <div class="row">
+                        <img class="col-4" src="" alt="">
+                        <img class="col-4" src="" alt="">
+                        <img class="col-4" src="" alt="">
+                    </div>
 
+                </div>
+            </div>
+        </div>
     </footer>
 
 
