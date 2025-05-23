@@ -47,7 +47,8 @@
                             <div class="d-md-none text-center text-primary fw-bold">Última Edição</div>
                             <div class="d-md-none text-center fw-bold">Baixe a Ultima edição do diário oficial</div>
                             <a href="https://www.caraguatatuba.sp.gov.br/pmc/category/diario-oficial/">
-                                <img src="img/edital.jpg" alt="última edição do diário oficial" class="img-fluid shadow rounded">
+                                <img src="img/edital.jpg" alt="última edição do diário oficial"
+                                    class="img-fluid shadow rounded">
                             </a>
                         </div>
 
@@ -56,22 +57,28 @@
 
             </section>
 
-            <section>
-                <form action="cadastro.php" method="post">
-                    <fieldset>
-                        <legend>Consultar Diário Oficial</legend>
-                        <input type="text" id="palavra_chave" name="palavraChave"
-                            placeholder="Nome completo ou palavra-chave">
+            <section class="border-bottom py-5 bg-light">
 
-                        <input type="text" id="data_inicial" name="dataInicial" placeholder="Data inicial">
-
-                        <input type="text" id="data_final" name="dataFinal" placeholder="Data final">
+                <form action="cadastro.php" method="post" class="row align-items-center mx-5">
+                    <fieldset class="row align-items-center">
+                        <div class="col-sm-12 text-center">
+                            <legend class="text-center fs-1 fw-bolder">Consultar Diário Oficial</legend>
+                            <input type="text" id="palavra_chave" name="palavraChave"
+                                placeholder="Nome completo ou palavra-chave" class="w-100">
+                        </div>
+                        <div class="col-md-6 d-grip gy-3 text-center"><input type="text" id="data_inicial" name="dataInicial" placeholder="Data inicial" class="w-100"></div>
+                        <div class="col-md-6 d-grip gy-3 text-center"><input type="text" id="data_final" name="dataFinal" placeholder="Data final" class="w-100"></div>
                     </fieldset>
-
-                    <button>Limpar</button>
-                    <button>Consultar</button>
-
+                    <div class="col-md-12 d-grip gy-3 text-end" style="padding-right: 34px;">
+                        <button>Limpar</button>
+                        <button>Consultar</button>
+                    </div>
                 </form>
+
+            </section>
+
+            <section>
+
             </section>
         </main>
 
