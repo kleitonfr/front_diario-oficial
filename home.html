@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
 
     <title>Diário Oficial de Caraguatatuba</title>
 </head>
@@ -61,63 +62,199 @@
 
                 <form action="cadastro.php" method="post" class="row align-items-center mx-5">
                     <fieldset class="row align-items-center">
-                        <div class="col-sm-12 text-center">
+
+                        <div class="col-sm-12 text-center mb-3">
                             <legend class="text-center fs-1 fw-bolder">Consultar Diário Oficial</legend>
                             <input type="text" id="palavra_chave" name="palavraChave"
-                                placeholder="Nome completo ou palavra-chave" class="w-100">
+                                placeholder="Nome completo ou palavra-chave" class="form-control w-100">
                         </div>
-                        <div class="col-md-6 d-grip gy-3 text-center"><input type="text" id="data_inicial" name="dataInicial" placeholder="Data inicial" class="w-100"></div>
-                        <div class="col-md-6 d-grip gy-3 text-center"><input type="text" id="data_final" name="dataFinal" placeholder="Data final" class="w-100"></div>
+
+                        <div class="col-md-6 mb-3 text-center">
+                            <input type="text" id="data_inicial" name="dataInicial" placeholder="Data inicial"
+                                class="form-control w-100">
+                        </div>
+
+                        <div class="col-md-6 mb-3 text-center">
+                            <input type="text" id="data_final" name="dataFinal" placeholder="Data final"
+                                class="form-control w-100">
+                        </div>
+
                     </fieldset>
-                    <div class="col-md-12 d-grip gy-3 text-end" style="padding-right: 34px;">
-                        <button>Limpar</button>
-                        <button>Consultar</button>
+
+                    <div class="col-md-12 text-end mt-3" style="padding-right: 34px;">
+                        <button type="reset" class="btn btn-secondary me-2">Limpar</button>
+                        <button type="submit" class="btn btn-primary">Consultar</button>
                     </div>
                 </form>
 
-                <div class="row align-items-center">
+            </section>
+
+            <section class="py-5 bg-light">
+
+                <div class=" container align-items-center w-100">
                     <div class="col-lg-12">
-                        <h1 class="fs-1 fw-bolder">Últimas Edições</h1>
-                    </div>
-                    
-                    <div class="row align-items-center">
-                        <div class="col-md-3" style="background-color: brown;"></div>
-                        <div class="col-md-3"></div>
-                        <div class="col-md-3"></div>
-                        <div class="col-md-3"></div>
+
+                        <div class="row">
+                            <h1 class="fs-1 fw-bolder text-center mt-5">Últimas Edições</h1>
+                        </div>
+
+                        <div class="row align-items-center">
+
+                            <div class="col-md-3 gy-5">
+                                <div class="card border-info  shadow-lg position-relative overflow-hidden h-100">
+                                    <div class="card-body mb-4">
+                                        <h6 class="fw-bold text-dark mb-1">Diário Oficial do dia</h6>
+                                        <p class="mb-0">22/05/2025</p>
+                                        <small class="text-muted">Edição nº 2162</small>
+                                        <div>
+                                            <i class="bi bi-newspaper position-absolute end-0 text-primary"
+                                                style="bottom: -20px; font-size: 10rem; opacity: 0.05; pointer-events: none; transform: rotate(45deg);"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 gy-5">
+                                <div class="card border-info  shadow-lg position-relative overflow-hidden h-100">
+                                    <div class="card-body mb-4">
+                                        <h6 class="fw-bold text-dark mb-1">Diário Oficial do dia</h6>
+                                        <p class="mb-0">22/05/2025</p>
+                                        <small class="text-muted">Edição nº 2162</small>
+                                        <div>
+                                            <i class="bi bi-newspaper position-absolute end-0 text-primary"
+                                                style="bottom: -20px; font-size: 10rem; opacity: 0.05; pointer-events: none; transform: rotate(45deg);"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 gy-5">
+                                <div class="card border-info  shadow-lg position-relative overflow-hidden h-100">
+                                    <div class="card-body mb-4">
+                                        <h6 class="fw-bold text-dark mb-1">Diário Oficial do dia</h6>
+                                        <p class="mb-0">22/05/2025</p>
+                                        <small class="text-muted">Edição nº 2162</small>
+                                        <div>
+                                            <i class="bi bi-newspaper position-absolute end-0 text-primary"
+                                                style="bottom: -20px; font-size: 10rem; opacity: 0.05; pointer-events: none; transform: rotate(45deg);"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 gy-5">
+                                <div class="card border-info  shadow-lg position-relative overflow-hidden h-100">
+                                    <div class="card-body mb-4">
+                                        <h6 class="fw-bold text-dark mb-1">Diário Oficial do dia</h6>
+                                        <p class="mb-0">22/05/2025</p>
+                                        <small class="text-muted">Edição nº 2162</small>
+                                        <div>
+                                            <i class="bi bi-newspaper position-absolute end-0 text-primary"
+                                                style="bottom: -20px; font-size: 10rem; opacity: 0.05; pointer-events: none; transform: rotate(45deg);"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row align-items-center">
+
+                            <div class="col-md-3 gy-5">
+                                <div class="card border-info  shadow-lg position-relative overflow-hidden h-100">
+                                    <div class="card-body mb-4">
+                                        <h6 class="fw-bold text-dark mb-1">Diário Oficial do dia</h6>
+                                        <p class="mb-0">22/05/2025</p>
+                                        <small class="text-muted">Edição nº 2162</small>
+                                        <div>
+                                            <i class="bi bi-newspaper position-absolute end-0 text-primary"
+                                                style="bottom: -20px; font-size: 10rem; opacity: 0.05; pointer-events: none; transform: rotate(45deg);"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 gy-5">
+                                <div class="card border-info  shadow-lg position-relative overflow-hidden h-100">
+                                    <div class="card-body mb-4">
+                                        <h6 class="fw-bold text-dark mb-1">Diário Oficial do dia</h6>
+                                        <p class="mb-0">22/05/2025</p>
+                                        <small class="text-muted">Edição nº 2162</small>
+                                        <div>
+                                            <i class="bi bi-newspaper position-absolute end-0 text-primary"
+                                                style="bottom: -20px; font-size: 10rem; opacity: 0.05; pointer-events: none; transform: rotate(45deg);"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 gy-5">
+                                <div class="card border-info  shadow-lg position-relative overflow-hidden h-100">
+                                    <div class="card-body mb-4">
+                                        <h6 class="fw-bold text-dark mb-1">Diário Oficial do dia</h6>
+                                        <p class="mb-0">22/05/2025</p>
+                                        <small class="text-muted">Edição nº 2162</small>
+                                        <div>
+                                            <i class="bi bi-newspaper position-absolute end-0 text-primary"
+                                                style="bottom: -20px; font-size: 10rem; opacity: 0.05; pointer-events: none; transform: rotate(45deg);"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 gy-5">
+                                <div class="card border-info  shadow-lg position-relative overflow-hidden h-100">
+                                    <div class="card-body mb-4">
+                                        <h6 class="fw-bold text-dark mb-1">Diário Oficial do dia</h6>
+                                        <p class="mb-0">22/05/2025</p>
+                                        <small class="text-muted">Edição nº 2162</small>
+                                        <div>
+                                            <i class="bi bi-newspaper position-absolute end-0 text-primary"
+                                                style="bottom: -20px; font-size: 10rem; opacity: 0.05; pointer-events: none; transform: rotate(45deg);"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
                     </div>
 
                 </div>
 
             </section>
 
-            <section>
-                
-            </section>
         </main>
 
     </div>
 
-    <footer class="shadow">
+    <footer class="bg-primary text-white py-5">
         <div class="container">
-            <div class="row">
-                <div class="col-4">
-                    <img src="img/logo-2025.png" alt="logo da Prefeitura" width="300">
+            <div class="row align-items-center">
+                <div class="col-md-4  text-center text-md-start mb-4 mb-md-0">
+                    <img src="img/logo-2025.png" alt="logo da Prefeitura" class="img-fluid"
+                        style="max-height: 100px;">
                 </div>
-                <div class="col-4">
-                    <h5>FALE CONOSCO</h5>
-                    <h5>MAPA DO SITE-PORTAL DA TRANSPARÊNCIA</h5>
-                    <h5>MAPA DO SITE-NOTÍCIAS E SERVIÇOS</h5>
+                <div class="col-md-4 text-center text-md-start border-start border-end border-white">
+                    <ul class="list-unstyled ps-3">
+                        <li class="mb-2"><a href="https://www.caraguatatuba.sp.gov.br/pmc/fale-conosco/"
+                                class="text-decoration-none text-white">FALE CONOSCO</a></li>
+                        <li class="mb-2"><a
+                                href="https://www.caraguatatuba.sp.gov.br/pmc/mapa-do-site-portal-da-transparencia/"
+                                class="text-decoration-none text-white">MAPA DO SITE - PORTAL DA TRANSPARÊNCIA</a></li>
+                        <li><a href="https://www.caraguatatuba.sp.gov.br/pmc/mapa-do-site-noticias-e-servicos/"
+                                class="text-decoration-none text-white">MAPA DO SITE - NOTÍCIAS E SERVIÇOS</a></li>
+                    </ul>
                 </div>
-                <div class="col-4">
-                    <div class="row">
-                        <img class="col-6" src="" alt="">
-                        <h6 class="col-6">NOS SIGA NAS REDES SOCIAIS</h6>
+                <div class="col-md-4 text-center text-md-start">
+                    <div class="d-flex align-items-center mb-2 justify-content-center">
+                        <i class="bi bi-box-arrow-in-right fs-4 me-2"></i>
+                        <span class="fw-bold">NOS SIGA NAS <span class="fw-bolder">REDES SOCIAIS</span></span>
                     </div>
-                    <div class="row">
-                        <img class="col-4" src="" alt="">
-                        <img class="col-4" src="" alt="">
-                        <img class="col-4" src="" alt="">
+                    <div class="d-flex gap-3 justify-content-center">
+                        <a href="https://www.instagram.com/caraguatatuba_oficial/"><i class="bi bi-instagram fs-1 text-white"></i></a>
+                        <a href="https://www.facebook.com/prefeituradecaraguatatuba"><i class="bi bi-facebook fs-1 text-white"></i></a>
+                        <a href="https://www.youtube.com/channel/UCH84Ukn-PabhE7vhXxhPUDw"><i class="bi bi-youtube fs-1 text-white"></i></a>
                     </div>
 
                 </div>
