@@ -16,11 +16,15 @@
 })
 */
 
+
+//inicializar biblioteca:
 AOS.init({
     duration: 1000,
     once: false 
 })
 
+
+//atualizar data no header:
 const atualizarData = () =>  {
     const agora = new Date();
 
