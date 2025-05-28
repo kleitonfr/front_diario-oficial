@@ -25,9 +25,11 @@
                 </div>
                 <div class="col-md-4">
                     <ul class="nav justify-content-center justify-content-lg-end align-items-center">
-                        <li class="nav-item"><a href="#conteudo-principal" class="nav-link active" style="font-size: 0.7rem;">ir para conteúdo
+                        <li class="nav-item"><a href="#conteudo-principal" class="nav-link active"
+                                style="font-size: 0.7rem;">ir para conteúdo
                                 principal[1]</a></li>
-                        <li class="nav-item"><a href="#consulta" class="nav-link active" style="font-size: 0.7rem;">ir para Busca[2]</a></li>
+                        <li class="nav-item"><a href="#consulta" class="nav-link active" style="font-size: 0.7rem;">ir
+                                para Busca[2]</a></li>
                     </ul>
                 </div>
             </nav>
@@ -49,7 +51,7 @@
             <section class="py-5 bg-light">
 
                 <div class="container mt-5">
-                    <div class="row align-items-center">
+                    <div class="row gx-5 align-items-center justify-content-center">
                         <div class="col-lg-6 mb-5 mb-lg-0 text-center text-lg-start">
                             <h1 class="display-4 fw-bold" style="color:#034C8C; margin: 50px 0px auto;"> DIÁRIO</h1>
                             <h2 class="display-1 fw-bolder" style="color: #03658C;">OFICIAL</h2>
@@ -63,7 +65,7 @@
                                 style="height: 50px">
                                 <button class="btn btn-primary fs-6"
                                     style="background-color:#03658C; border-color: #03658C; width: 184px"> <i
-                                        class="bi bi-arrow-counterclockwise me-2"></i> Última Edição</button>
+                                        class="bi bi-eye me-2"></i> Última Edição</button>
                                 <button class="btn btn-outline-primary fs-6"
                                     style="color: #03658C; border-color: #03658C; width: 184px">
                                     <i class="bi bi-search fw-bold me-2"></i> Consultar
@@ -71,7 +73,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-6 text-center">
+                        <div class="col-auto text-center">
                             <div class="d-md-none text-start text-dark fw-bold" data-aos="zoom-in" data-aos-delay="0">
                                 ÚLTIMA EDIÇÃO</div>
                             <div class="d-md-none text-start fs-2 fw-bold" data-aos="zoom-in" data-aos-delay="300">Baixe
@@ -79,10 +81,16 @@
                             <div class="mt-5" data-aos="zoom-in" data-aos-delay="300">
                                 <a href="https://www.caraguatatuba.sp.gov.br/pmc/category/diario-oficial/">
                                     <div class="position-relative">
-                                        <div class="">
-                                            <img src="img/edital.jpg" alt="última edição do diário oficial"
-                                                class="img-fluid shadow rounded imagem">
+
+                                        <img src="img/edital.jpg" alt="última edição do diário oficial"
+                                            class="img-fluid shadow rounded imagem">
+                                        <div class="overlay overlayplus position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                            <div class="d-grip">
+                                                <i class="bi bi-eyeglasses me-2 text-white fw-bolder display-1" ></i>
+                                                <h1 class="text-white fs-3 ">Leia a<br>última edição</h1>
+                                            </div>
                                         </div>
+
                                     </div>
                                 </a>
                             </div>
@@ -95,32 +103,29 @@
 
             <section class="border-bottom py-5 bg-light" id="consulta">
 
-                <form action="cadastro.php" method="post" class="row align-items-center mx-5" data-aos="fade-up">
-                    <fieldset class="row align-items-center">
-
-                        <div class="col-sm-12 text-center mb-3">
-                            <legend class="text-center fs-1 fw-bolder">Consultar Diário Oficial</legend>
-                            <input type="text" id="palavra_chave" name="palavraChave"
-                                placeholder="Nome completo ou palavra-chave" class="form-control shadow">
+                <div class="container-sm px-5 my-5">
+                    <form action="cadastro.php" method="post" class="row align-items-center mx-auto" data-aos="fade-up">
+                        <fieldset class="row align-items-center">
+                            <div class="col-sm-12 text-center mb-3">
+                                <legend class="text-center fs-1 fw-bolder mb-5">Consultar Diário Oficial</legend>
+                                <input type="text" id="palavra_chave" name="palavraChave"
+                                    placeholder="Nome completo ou palavra-chave" class="form-control shadow">
+                            </div>
+                            <div class="col-md-6 mb-3 text-center">
+                                <input type="text" id="data_inicial" name="dataInicial" placeholder="Data inicial"
+                                    class="form-control shadow">
+                            </div>
+                            <div class="col-md-6 mb-3 text-center">
+                                <input type="text" id="data_final" name="dataFinal" placeholder="Data final"
+                                    class="form-control shadow">
+                            </div>
+                        </fieldset>
+                        <div class="col-md-12 text-end mt-3" style="padding-right: 34px;">
+                            <button type="reset" class="btn btn-secondary me-2">Limpar</button>
+                            <button type="submit" class="btn btn-primary">Consultar</button>
                         </div>
-
-                        <div class="col-md-6 mb-3 text-center">
-                            <input type="text" id="data_inicial" name="dataInicial" placeholder="Data inicial"
-                                class="form-control shadow">
-                        </div>
-
-                        <div class="col-md-6 mb-3 text-center">
-                            <input type="text" id="data_final" name="dataFinal" placeholder="Data final"
-                                class="form-control shadow">
-                        </div>
-
-                    </fieldset>
-
-                    <div class="col-md-12 text-end mt-3" style="padding-right: 34px;">
-                        <button type="reset" class="btn btn-secondary me-2">Limpar</button>
-                        <button type="submit" class="btn btn-primary">Consultar</button>
-                    </div>
-                </form>
+                    </form>
+                </div>
 
             </section>
 
