@@ -4,6 +4,20 @@
     align-content: center; 
 }
 
+/* fonte: */
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
 
 /*buttons: */
 
@@ -38,19 +52,41 @@
 
 /* hover de imagens e ícones */
 
-.overlayplus {
-  background-color: rgba(17, 94, 194, 0.603);
+.overlay{
+  background-color: rgba(13, 91, 122, 0.411);
   opacity: 0;
-  transform: translateY(-5px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  transform: scaleY(0);                
+  transform-origin: top;
+  transition: opacity 1.5s ease, transform 0.6s ease-in-out;
 }
 
-.position-relative:hover .overlayplus {
-  opacity: 1;
-  transform: translateY(0);
+.position-relative:hover .overlay {
+opacity: 1;
+transform: scaleY(1);  
 }
 
+.overlayCard {
+  background-color: rgba(6, 64, 87, 0.651);
+  opacity: 0;
+  bottom: 0;
+  left:0;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: opacity 1.5s ease, transform 0.6s ease-in-out;
+}
 
+.position-relative:hover .overlayCard {
+opacity: 1;
+transform: scaleY(1); 
+}
 
 
 

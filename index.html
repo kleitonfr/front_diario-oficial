@@ -10,10 +10,17 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 
+    <!-- Fonte: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
     <title>Diário Oficial de Caraguatatuba</title>
 </head>
 
-<body>
+<body class="poppins-extralight">
     <div class="w-100">
 
 
@@ -48,7 +55,7 @@
 
         <main>
 
-            <section class="py-5 bg-light">
+            <section class=" container-fluid py-5 bg-light">
 
                 <div class="container mt-5">
                     <div class="row gx-5 align-items-center justify-content-center">
@@ -73,26 +80,24 @@
                             </div>
                         </div>
 
-                        <div class="col-auto text-center">
-                            <div class="d-md-none text-start text-dark fw-bold" data-aos="zoom-in" data-aos-delay="0">
-                                ÚLTIMA EDIÇÃO</div>
-                            <div class="d-md-none text-start fs-2 fw-bold" data-aos="zoom-in" data-aos-delay="300">Baixe
-                                a última publicação no diário oficial</div>
-                            <div class="mt-5" data-aos="zoom-in" data-aos-delay="300">
-                                <a href="https://www.caraguatatuba.sp.gov.br/pmc/category/diario-oficial/">
-                                    <div class="position-relative">
+                        <div class="col-auto text-center px-5 py-5">
 
-                                        <img src="img/edital.jpg" alt="última edição do diário oficial"
-                                            class="img-fluid shadow rounded imagem">
-                                        <div class="overlay overlayplus position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
-                                            <div class="d-grip">
-                                                <i class="bi bi-eyeglasses me-2 text-white fw-bolder display-1" ></i>
-                                                <h1 class="text-white fs-3 ">Leia a<br>última edição</h1>
-                                            </div>
-                                        </div>
+                            <div
+                                class="d-grip justify-content-center align-items-center position-relative overflow-hidden">
+                                <div class="d-md-none">
+                                    <h2 class="fw-bold  fs-5 mb-3" data-aos="zoom-in" data-aos-delay="0">ÚLTIMA EDIÇÃO
+                                    </h2>
+                                    <h3 class="fw-bolder fs-6 mb-5" data-aos="zoom-in" data-aos-delay="100">Baixe
+                                        a última publicação no diário oficial</h3>
+                                </div>
 
-                                    </div>
-                                </a>
+                                <input type="image" src="img/edital.jpg" class="img-fluid shadow" data-aos="zoom-in"
+                                    data-aos-delay="150" style="border-width: 0px; animation: unset;">
+
+                                <div class="overlay position-absolute d-flex justify-content-center align-items-center">
+                                    <i class="bi bi-eyeglasses d-f text-white display-1 fw-bold"></i>
+                                </div>
+
                             </div>
                         </div>
 
@@ -140,7 +145,7 @@
 
                         <div class="row align-items-center">
 
-                            <div class="col-md-3 gy-5" data-aos="flip-right" data-aos-delay="0">
+                            <div class="col-md-3 gy-5 position-relative" data-aos="fade-right" data-aos-delay="0">
                                 <div class="card border-info  shadow-lg position-relative overflow-hidden h-100">
                                     <div class="card-body mb-4">
                                         <h6 class="fw-bold text-dark mb-1">Diário Oficial do dia</h6>
@@ -151,10 +156,25 @@
                                                 style="bottom: -20px; font-size: 10rem; opacity: 0.05; pointer-events: none; transform: rotate(45deg);"></i>
                                         </div>
                                     </div>
+
+                                    <div class="overlayCard position-absolute">
+
+                                        <div class="row d-flex align-items-center text-center h-100">
+                                            <div class="col-6 d-grid text-end img-fluid text-white fs-1 border-end">
+                                                <i class="bi bi-file-pdf-fill "></i>
+                                                <h6 class="text-end pe-md-1">PDF</h6>
+                                            </div>
+
+                                            <div class="col-6 text-start img-fluid text-white fs-1">
+                                                <i class="bi bi-file-earmark-text-fill"></i>
+                                                <h6 class="text-start ps-md-1">ODT</h6>
+                                            </div>
+                                        </div>
+
+                                    </div>
                                 </div>
                             </div>
-
-                            <div class="col-md-3 gy-5" data-aos="flip-right" data-aos-delay="150">
+                            <div class="col-md-3 gy-5 position-relative" data-aos="fade-right" data-aos-delay="100">
                                 <div class="card border-info  shadow-lg position-relative overflow-hidden h-100">
                                     <div class="card-body mb-4">
                                         <h6 class="fw-bold text-dark mb-1">Diário Oficial do dia</h6>
@@ -165,10 +185,25 @@
                                                 style="bottom: -20px; font-size: 10rem; opacity: 0.05; pointer-events: none; transform: rotate(45deg);"></i>
                                         </div>
                                     </div>
+
+                                    <div class="overlayCard position-absolute">
+
+                                        <div class="row d-flex align-items-center text-center h-100">
+                                            <div class="col-6 d-grid text-end img-fluid text-white fs-1 border-end">
+                                                <i class="bi bi-file-pdf-fill "></i>
+                                                <h6 class="text-end pe-md-1">PDF</h6>
+                                            </div>
+
+                                            <div class="col-6 text-start img-fluid text-white fs-1">
+                                                <i class="bi bi-file-earmark-text-fill"></i>
+                                                <h6 class="text-start ps-md-1">ODT</h6>
+                                            </div>
+                                        </div>
+
+                                    </div>
                                 </div>
                             </div>
-
-                            <div class="col-md-3 gy-5" data-aos="flip-right" data-aos-delay="300">
+                            <div class="col-md-3 gy-5 position-relative" data-aos="fade-right" data-aos-delay="200">
                                 <div class="card border-info  shadow-lg position-relative overflow-hidden h-100">
                                     <div class="card-body mb-4">
                                         <h6 class="fw-bold text-dark mb-1">Diário Oficial do dia</h6>
@@ -179,10 +214,25 @@
                                                 style="bottom: -20px; font-size: 10rem; opacity: 0.05; pointer-events: none; transform: rotate(45deg);"></i>
                                         </div>
                                     </div>
+
+                                    <div class="overlayCard position-absolute">
+
+                                        <div class="row d-flex align-items-center text-center h-100">
+                                            <div class="col-6 d-grid text-end img-fluid text-white fs-1 border-end">
+                                                <i class="bi bi-file-pdf-fill "></i>
+                                                <h6 class="text-end pe-md-1">PDF</h6>
+                                            </div>
+
+                                            <div class="col-6 text-start img-fluid text-white fs-1">
+                                                <i class="bi bi-file-earmark-text-fill"></i>
+                                                <h6 class="text-start ps-md-1">ODT</h6>
+                                            </div>
+                                        </div>
+
+                                    </div>
                                 </div>
                             </div>
-
-                            <div class="col-md-3 gy-5" data-aos="flip-right" data-aos-delay="450">
+                            <div class="col-md-3 gy-5 position-relative" data-aos="fade-right" data-aos-delay="300">
                                 <div class="card border-info  shadow-lg position-relative overflow-hidden h-100">
                                     <div class="card-body mb-4">
                                         <h6 class="fw-bold text-dark mb-1">Diário Oficial do dia</h6>
@@ -192,6 +242,22 @@
                                             <i class="bi bi-newspaper position-absolute end-0 text-primary"
                                                 style="bottom: -20px; font-size: 10rem; opacity: 0.05; pointer-events: none; transform: rotate(45deg);"></i>
                                         </div>
+                                    </div>
+
+                                    <div class="overlayCard position-absolute">
+
+                                        <div class="row d-flex align-items-center text-center h-100">
+                                            <div class="col-6 d-grid text-end img-fluid text-white fs-1 border-end">
+                                                <i class="bi bi-file-pdf-fill "></i>
+                                                <h6 class="text-end pe-md-1">PDF</h6>
+                                            </div>
+
+                                            <div class="col-6 text-start img-fluid text-white fs-1">
+                                                <i class="bi bi-file-earmark-text-fill"></i>
+                                                <h6 class="text-start ps-md-1">ODT</h6>
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -200,7 +266,7 @@
 
                         <div class="row align-items-center">
 
-                            <div class="col-md-3 gy-5" data-aos="flip-right" data-aos-delay="600">
+                            <div class="col-md-3 gy-5 position-relative" data-aos="fade-right" data-aos-delay="400">
                                 <div class="card border-info  shadow-lg position-relative overflow-hidden h-100">
                                     <div class="card-body mb-4">
                                         <h6 class="fw-bold text-dark mb-1">Diário Oficial do dia</h6>
@@ -211,10 +277,25 @@
                                                 style="bottom: -20px; font-size: 10rem; opacity: 0.05; pointer-events: none; transform: rotate(45deg);"></i>
                                         </div>
                                     </div>
+
+                                    <div class="overlayCard position-absolute">
+
+                                        <div class="row d-flex align-items-center text-center h-100">
+                                            <div class="col-6 d-grid text-end img-fluid text-white fs-1 border-end">
+                                                <i class="bi bi-file-pdf-fill "></i>
+                                                <h6 class="text-end pe-md-1">PDF</h6>
+                                            </div>
+
+                                            <div class="col-6 text-start img-fluid text-white fs-1">
+                                                <i class="bi bi-file-earmark-text-fill"></i>
+                                                <h6 class="text-start ps-md-1">ODT</h6>
+                                            </div>
+                                        </div>
+
+                                    </div>
                                 </div>
                             </div>
-
-                            <div class="col-md-3 gy-5" data-aos="flip-right" data-aos-delay="750">
+                            <div class="col-md-3 gy-5 position-relative" data-aos="fade-right" data-aos-delay="500">
                                 <div class="card border-info  shadow-lg position-relative overflow-hidden h-100">
                                     <div class="card-body mb-4">
                                         <h6 class="fw-bold text-dark mb-1">Diário Oficial do dia</h6>
@@ -225,10 +306,25 @@
                                                 style="bottom: -20px; font-size: 10rem; opacity: 0.05; pointer-events: none; transform: rotate(45deg);"></i>
                                         </div>
                                     </div>
+
+                                    <div class="overlayCard position-absolute">
+
+                                        <div class="row d-flex align-items-center text-center h-100">
+                                            <div class="col-6 d-grid text-end img-fluid text-white fs-1 border-end">
+                                                <i class="bi bi-file-pdf-fill "></i>
+                                                <h6 class="text-end pe-md-1">PDF</h6>
+                                            </div>
+
+                                            <div class="col-6 text-start img-fluid text-white fs-1">
+                                                <i class="bi bi-file-earmark-text-fill"></i>
+                                                <h6 class="text-start ps-md-1">ODT</h6>
+                                            </div>
+                                        </div>
+
+                                    </div>
                                 </div>
                             </div>
-
-                            <div class="col-md-3 gy-5" data-aos="flip-right" data-aos-delay="900">
+                            <div class="col-md-3 gy-5 position-relative" data-aos="fade-right" data-aos-delay="600">
                                 <div class="card border-info  shadow-lg position-relative overflow-hidden h-100">
                                     <div class="card-body mb-4">
                                         <h6 class="fw-bold text-dark mb-1">Diário Oficial do dia</h6>
@@ -239,10 +335,25 @@
                                                 style="bottom: -20px; font-size: 10rem; opacity: 0.05; pointer-events: none; transform: rotate(45deg);"></i>
                                         </div>
                                     </div>
+
+                                    <div class="overlayCard position-absolute">
+
+                                        <div class="row d-flex align-items-center text-center h-100">
+                                            <div class="col-6 d-grid text-end img-fluid text-white fs-1 border-end">
+                                                <i class="bi bi-file-pdf-fill "></i>
+                                                <h6 class="text-end pe-md-1">PDF</h6>
+                                            </div>
+
+                                            <div class="col-6 text-start img-fluid text-white fs-1">
+                                                <i class="bi bi-file-earmark-text-fill"></i>
+                                                <h6 class="text-start ps-md-1">ODT</h6>
+                                            </div>
+                                        </div>
+
+                                    </div>
                                 </div>
                             </div>
-
-                            <div class="col-md-3 gy-5" data-aos="flip-right" data-aos-delay="1050">
+                            <div class="col-md-3 gy-5 position-relative" data-aos="fade-right" data-aos-delay="700">
                                 <div class="card border-info  shadow-lg position-relative overflow-hidden h-100">
                                     <div class="card-body mb-4">
                                         <h6 class="fw-bold text-dark mb-1">Diário Oficial do dia</h6>
@@ -252,6 +363,22 @@
                                             <i class="bi bi-newspaper position-absolute end-0 text-primary"
                                                 style="bottom: -20px; font-size: 10rem; opacity: 0.05; pointer-events: none; transform: rotate(45deg);"></i>
                                         </div>
+                                    </div>
+
+                                    <div class="overlayCard position-absolute">
+
+                                        <div class="row d-flex align-items-center text-center h-100">
+                                            <div class="col-6 d-grid text-end img-fluid text-white fs-1 border-end">
+                                                <i class="bi bi-file-pdf-fill "></i>
+                                                <h6 class="text-end pe-md-1">PDF</h6>
+                                            </div>
+
+                                            <div class="col-6 text-start img-fluid text-white fs-1">
+                                                <i class="bi bi-file-earmark-text-fill"></i>
+                                                <h6 class="text-start ps-md-1">ODT</h6>
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
