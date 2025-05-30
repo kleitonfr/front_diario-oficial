@@ -18,6 +18,22 @@
   font-style: normal;
 }
 
+/* auto-contraste */
+
+.constrat {
+  background-color: black;
+  color: white;
+}
+
+.constrat a {
+  color: yellow;
+  text-decoration: underline;
+}
+
+.constrat i {
+  color: white;
+}
+
 
 /*buttons: */
 
