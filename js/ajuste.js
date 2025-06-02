@@ -1,22 +1,3 @@
-/* document.addEventListener('DOMContentLoaded', () => {
-    const observar = new IntersectionObserver((elementos) => {
-        elementos.forEach(elemento => {
-            if (elemento.isIntersecting) { 
-                elemento.target.classList.add('show')
-            }
-            else {
-                elemento.target.classList.remove('show')
-                elemento.target.classList.add('hidden')
-            }
-        })
-    })
-
-    document.querySelectorAll('.hidden').forEach(elemento => observar.observe(elemento));
-
-})
-*/
-
-
 //inicializar biblioteca:
 AOS.init({
     duration: 1000,
@@ -45,11 +26,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 //aplica auto-contraste:
-
 const contraste = document.getElementById('contraste');
 
 contraste.addEventListener('click', function () {
-  document.body.classList.toggle('constrat');
+  document.body.classList.toggle('contrast');
 });
 
 

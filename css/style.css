@@ -19,19 +19,63 @@
 }
 
 /* auto-contraste */
+.contrast header{
 
-.constrat {
-  background-color: black;
-  color: white;
+  background-color: black !important;
+  color: white !important;
+  border-bottom: 1px solid;
+  border-color: white !important;
 }
 
-.constrat a {
-  color: yellow;
-  text-decoration: underline;
+.contrast header nav{
+
+  background-color: black !important;
+  color: white !important;
+  border-color: white !important;
 }
 
-.constrat i {
-  color: white;
+.contrast section{
+  background-color: black !important;
+  color: white !important;
+  border-color: white !important;
+}
+
+.contrast h1{
+  color: white !important;
+  border-color: white !important;;
+}
+
+.contrast h2{
+  color: white !important;
+  border-color: white !important;;
+}
+
+.contrast a {
+  color: yellow !important;
+  text-decoration: underline !important;
+}
+
+.contrast #buttonFirstSession a {
+  background-color: black !important;
+  border-color: white !important;
+  color: yellow !important;
+}
+
+.contrast i {
+  color: white !important;
+}
+
+.contrast button {
+  background-color: black !important;
+  border-color: white !important;
+  color: yellow !important;
+}
+
+.contrast footer {
+  background-color: black !important;
+  color: white !important;
+  border-top: 1px solid;
+  border-color: white !important;
 }
 
 
