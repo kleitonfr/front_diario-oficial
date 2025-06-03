@@ -103,6 +103,31 @@
 
 /*sections: */
 
+.bg-image {
+  position: relative;
+  background-image: url("../img/caragua3.jpeg") !important;
+  background-color: light;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.bg-image::before {
+  content: "";
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(230, 235, 236, 0.507);
+  z-index: 2;
+}
+
+.bg-image * {
+  position: relative;
+  z-index: 3;
+}
+
 .hidden {
   opacity: 0;
   transform: translateY(40px);
