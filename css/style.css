@@ -89,13 +89,14 @@
 
 .btn-color {
     font-size: larger;
-    color:   rgb(17, 94, 194);
+    color:  #074a64;
 }
 
 .btn-color:hover{
-    background-color: rgb(17, 94, 194);
-    transition: background-color 0.3s ease;
+    background-color: #074a64;
     color: aliceblue;
+    transition: background-color 0.3s ease;
+    
 
     
 }
@@ -119,7 +120,7 @@
   left:0;
   width: 100%;
   height: 100%;
-  background-color: rgba(230, 235, 236, 0.507);
+  background: linear-gradient(to bottom, rgba(202, 228, 238, 0.479), rgba(95, 100, 102, 0.623));
   z-index: 2;
 }
 
@@ -144,7 +145,7 @@
 /* hover de imagens e ícones */
 
 .overlay{
-  background-color: rgba(13, 91, 122, 0.411);
+  background: linear-gradient(to bottom, rgba(13, 91, 122, 0.411), rgba(6, 61, 87, 0.966));
   opacity: 0;
   top: 0;
   left: 0;

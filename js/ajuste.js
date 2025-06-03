@@ -16,7 +16,8 @@ const atualizarData = () =>  {
         year: 'numeric'
     }
 
-    const dataFormatada = agora.toLocaleDateString('pt-BR',formato)
+    let dataFormatada = agora.toLocaleDateString('pt-BR',formato)
+    dataFormatada = dataFormatada.charAt(0).toUpperCase() + dataFormatada.slice(1)
     document.getElementById('dataAtual').textContent = dataFormatada
 }
 
@@ -31,6 +32,9 @@ const contraste = document.getElementById('contraste');
 contraste.addEventListener('click', function () {
   document.body.classList.toggle('contrast');
 });
+
+
+
 
 
 
