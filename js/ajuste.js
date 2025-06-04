@@ -27,11 +27,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 //aplica auto-contraste:
-const contraste = document.getElementById('contraste');
+const contraste = document.getElementById('contraste')
 
 contraste.addEventListener('click', function () {
-  document.body.classList.toggle('contrast');
-});
+  document.body.classList.toggle('contrast')
+})
+
+
+//paginação:
+
 
 
 
