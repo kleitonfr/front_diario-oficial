@@ -180,8 +180,12 @@ opacity: 1;
 transform: scaleY(1); 
 }
 
-
-
+/* aplicar dropdown no nave. */
+@media (max-width:549px) {
+  .dropdown{}
+  .dropdown-menu{}
+  .dropdown-item{}
+}
 
 
 
