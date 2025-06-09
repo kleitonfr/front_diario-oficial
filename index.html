@@ -26,22 +26,6 @@
 
         <header class=" row px-5 mx-0 bg-white">
 
-            <nav
-                class="border-bottom py-1 d-flex flex-row  justify-content-center justify-content-md-start align-items-center">
-                <div class="dropdown" >
-                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" style="font-size: 0.5rem" > MENU ACESSIBILIDADE:</button>
-                    <ul class="dropdown-menu">
-                        <li class="dropdown-item"><a href="#conteudo-principal" class="nav-link active"
-                                style="font-size: 0.7rem;">ir para conteúdo
-                                principal[1]</a></li>
-                        <li class="dropdown-item"><a href="#consulta" class="nav-link active" style="font-size: 0.7rem;">ir
-                                para Busca[2]</a></li>
-                        <li class="dropdown-item"><a class="nav-link active" href="#contraste" id="contraste"
-                                style="font-size: 0.7rem;"> Auto Contraste[3]</a></li>
-                    </ul>
-                </div>
-            </nav>
-
             <div class="row d-grid d-md-flex">
                 <div class="col-md-6 text-center text-md-start align-items-center">
                     <a href="http://caraguatatuba.sp.gov.br/pmc"
@@ -57,6 +41,42 @@
         </header>
 
         <main class="bg-image">
+
+            <div class="d-flex position-fixed justify-content-center align-items-center mb-4"
+                style="bottom: 50%; right: 6px; z-index: 1050; width: 50px; height: 50px;">
+                <button type="button" class="btn-primary" id="btn-principal"
+                    style="width: 40px; height: 40px; border-radius: 8px;"><i
+                        class="bi bi-universal-access"></i></button>
+            </div>
+
+            <div class="d-flex position-fixed justify-content-center align-items-center mb-4 "
+                style="bottom:50%; right: 60px; z-index:1050; width: 50px; height: 50px">
+                <button type="button" class="btn-primary btn-off"
+                    style="width: 40px; height: 40px; border-radius: 8px;">
+                    <a href="#contraste" class="text-white" id="contraste">
+                        <i class="bi bi-lightbulb"></i>
+                    </a>
+                </button>
+            </div>
+
+            <div class="d-flex position-fixed justify-content-center align-items-center mb-4"
+                style="bottom:50%; right: 114px; z-index:1050; width: 50px; height: 50px">
+                <button type="button" class="btn-primary btn-off"
+                    style="width: 40px; height: 40px; border-radius: 8px;">
+                    <a href="#consulta" class="text-white fs-6" ><i class="bi bi-search"></i></a>
+                </button>
+            </div>
+
+            <div class="d-flex position-fixed justify-content-center align-items-center mb-4"
+                style="bottom:50%; right: 169px; z-index:1050; width: 50px; height: 50px">
+                <button type="button" class="btn-primary btn-off d-flex justify-content-center align-items-center"
+                    style="width: 40px; height: 40px; border-radius: 8px;">
+                    <a href="#conteudo-principal" class="text-white fs-6">
+                        <i class="bi bi-1-circle-fill"></i>
+                    </a>
+                </button>
+            </div>
+
 
             <section class="container-fluid py-5">
 

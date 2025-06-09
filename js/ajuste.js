@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 //aplica auto-contraste:
+
 const contraste = document.getElementById('contraste')
 
 contraste.addEventListener('click', function () {
@@ -34,32 +35,18 @@ contraste.addEventListener('click', function () {
 })
 
 
-//dropdown no nav:
-/*
-const menu1 = document.getElementById('menu1')
-const menu2 = document.getElementById('menu2')
-const menuItens = document.querySelectorAll('.menu')
 
+// acessibilidade:
 
-function aplicarDropdown() {
+const btnPrincipal = document.querySelector('#btn-principal')
+const toggleButtons = document.querySelectorAll('.btn-off, .btn-on')
 
-    if (window.innerWidth > 549) {
-        menu1.classList.add('dropdown')
-        menu2.classList.add('dropdown-menu')
-        menuItens.classList.add('dropdown-item')
-    }
-    else {        
-        menu1.classList.remove('dropdown')
-        menu2.classList.remove('dropdown-menu')
-        menuItens.classList.remove('dropdown-item')
-    }
-
-}
-
-window.addEventListener('laod', aplicarDropdown())
-window.addEventListener('resize', aplicarDropdown())
-
-*/
+btnPrincipal.addEventListener('click', () => {
+  toggleButtons.forEach(btn => {
+    btn.classList.toggle('btn-off')
+    btn.classList.toggle('btn-on')
+  })
+})
 
 
 

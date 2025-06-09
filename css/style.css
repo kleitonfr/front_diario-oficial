@@ -180,12 +180,20 @@ opacity: 1;
 transform: scaleY(1); 
 }
 
-/* aplicar dropdown no nave. */
-@media (max-width:549px) {
-  .dropdown{}
-  .dropdown-menu{}
-  .dropdown-item{}
+/* botão acessibilidade */
+
+.btn-off{
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
 }
+
+.btn-on{
+  opacity: 1; 
+  pointer-events:auto;
+  transition: transform 0.6s ease-in-out, opacity 0.4s ease;
+}
+
 
 
 
