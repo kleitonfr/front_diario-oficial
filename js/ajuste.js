@@ -72,3 +72,32 @@ btnMaxFonte.addEventListener('click', () => {
 })
 
 
+// Dark mode:
+
+const btnDark = document.getElementById('btnDark')
+const darkHtml = document.getElementById('htmlDark')
+const darkBodyTitulo = document.querySelector('.tituloCor')
+const darkBodySub = document.querySelector('.subtCor')
+const darkBodyMain = document.querySelector('.bg-image')
+const darkBodyFooter = document.querySelector('.footerColor')
+const btnColor = document.querySelector('.btn-color') 
+
+btnDark.addEventListener('click', () => {
+    if(darkHtml.dataset.bsTheme === 'light') {
+        darkHtml.dataset.bsTheme = 'dark'
+        darkBodyTitulo.classList.add('darkTitulo')
+        darkBodySub.classList.add('darkTitulo')
+        darkBodyMain.classList.add('darkModeBody')
+        darkBodyFooter.classList.add('darkModeFooter')
+        btnColor.classList.add('darkBtns')
+    }
+    else {
+        darkHtml.dataset.bsTheme = 'light'
+        darkBodyTitulo.classList.remove('darkTitulo')
+        darkBodySub.classList.remove('darkTitulo')
+        darkBodyMain.classList.remove('darkModeBody')
+        darkBodyFooter.classList.remove('darkModeFooter')
+        btnColor.classList.remove('darkBtns')
+    }
+})
+
