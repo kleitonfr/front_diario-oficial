@@ -26,29 +26,49 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 
-//aplica auto-contraste:
-
-const contraste = document.getElementById('contraste')
-
-contraste.addEventListener('click', function () {
-    document.body.classList.toggle('contrast')
-})
-
-
-
 // acessibilidade:
 
+
 const btnPrincipal = document.querySelector('#btn-principal')
-const toggleButtons = document.querySelectorAll('.btn-off, .btn-on')
+const trocaClass = document.querySelectorAll('.btn-off, .btn-on')
 
 btnPrincipal.addEventListener('click', () => {
-  toggleButtons.forEach(btn => {
+  trocaClass.forEach(btn => {
     btn.classList.toggle('btn-off')
     btn.classList.toggle('btn-on')
   })
 })
 
 
+    //auto contrate:
 
+const contraste = document.getElementById('contraste')
+
+contraste.addEventListener('click', () => {
+    document.body.classList.toggle('contrast')
+})
+
+
+    //fonte size:
+
+let tamanhoAtual = 100
+
+const btnMinFonte = document.getElementById("btnMaxFonte")
+
+btnMinFonte.addEventListener('click', () =>{
+    if(tamanhoAtual < 200) {
+        tamanhoAtual += 10
+        document.body.style.fontSize = tamanhoAtual + "%"
+    }
+})
+
+const btnMaxFonte = document.getElementById("btnMinFonte")
+
+btnMaxFonte.addEventListener('click', () => {
+    if(tamanhoAtual > 50) {
+        tamanhoAtual -= 10
+        document.body.style.fontSize = tamanhoAtual + "%"
+    }
+})
 
 
