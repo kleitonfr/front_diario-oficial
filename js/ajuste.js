@@ -25,20 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     atualizarData();
 })
 
-
-// acessibilidade:
-
-
-const btnPrincipal = document.querySelector('#btn-principal')
-const trocaClass = document.querySelectorAll('.btn-off, .btn-on')
-
-btnPrincipal.addEventListener('click', () => {
-  trocaClass.forEach(btn => {
-    btn.classList.toggle('btn-off')
-    btn.classList.toggle('btn-on')
-  })
-})
-
+//Acessibilidade
 
     //auto contrate:
 
@@ -80,7 +67,9 @@ const darkBodyTitulo = document.querySelector('.tituloCor')
 const darkBodySub = document.querySelector('.subtCor')
 const darkBodyMain = document.querySelector('.bg-image')
 const darkBodyFooter = document.querySelector('.footerColor')
-const btnColor = document.querySelector('.btn-color') 
+const btnColor = document.querySelector('.btn-color')
+const iconDark = document.getElementById('moon')
+
 
 btnDark.addEventListener('click', () => {
     if(darkHtml.dataset.bsTheme === 'light') {
@@ -90,6 +79,8 @@ btnDark.addEventListener('click', () => {
         darkBodyMain.classList.add('darkModeBody')
         darkBodyFooter.classList.add('darkModeFooter')
         btnColor.classList.add('darkBtns')
+
+        btnDark.innerHTML = '<i class="bi bi-brightness-high-fill" id="moon"></i>'
     }
     else {
         darkHtml.dataset.bsTheme = 'light'
@@ -97,7 +88,9 @@ btnDark.addEventListener('click', () => {
         darkBodySub.classList.remove('darkTitulo')
         darkBodyMain.classList.remove('darkModeBody')
         darkBodyFooter.classList.remove('darkModeFooter')
-        btnColor.classList.remove('darkBtns')
+        btnColor.classList.remove('darkBtns')  
+        
+        btnDark.innerHTML = '<i class="bi bi-moon-fill" id="moon"></i>'
     }
 })
 

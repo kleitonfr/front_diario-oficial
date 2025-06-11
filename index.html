@@ -25,23 +25,46 @@
     <div>
 
 
-        <header class=" row px-5 mx-0  position-relative">
+        <header class=" row  mx-0  position-relative">
 
-            <div class="position-absolute d-flex gap-2 justify-content-end end-0 pt-1" style="font-size: 12px;">
-                <button  type="button" class="btn-outline-primary" style="border: none; border-radius: 8px;">
-                    <a href="#conteudo-principal">
-                        <i class="bi bi-file-earmark-text-fill"></i>
-                    </a>
-                </button>
-
-                <button type="button" class="btn-outline-primary" style="border: none; border-radius: 8px;">
-                    <a href="#consulta"><i class="bi bi-binoculars-fill"></i></a>
-                </button>
-
-                <button  type="button" class="btn-outline-primary" id="btnDark" style="border: none; border-radius: 8px;">
-                    <i class="bi bi-brightness-low-fill"></i>
-                </button>
-            </div>
+            <nav class="d-flex px-0 justify-content-center border-bottom" style="height: 2rem; font-size: 0.7rem;">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#conteudo-principal">Ir para o conteúdo principal <i
+                                class="bi bi-1-square-fill"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#consulta">Ir para a busca <i class="bi bi-2-square-fill"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#rodape">Ir para o rodapé <i class="bi bi-3-square-fill"></i></a>
+                    </li>
+                </ul>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contraste" id="contraste">
+                            Alto contraste<i class="bi bi-4-square-fill"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#btnMaxFonte" id="btnMaxFonte">Aumentar fonte<i
+                                class="bi bi-5-square-fill"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#btnMinFonte" id="btnMinFonte" style="text-decoration: none;">
+                            Diminuir fonte
+                            <i class="bi bi-6-square-fill"></i>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                <li class="d-flex ps-5 fs-6">
+                    <button type="button" class="btn-outline-primary text-primary" id="btnDark"
+                        style="border: none;background: none;">
+                        <i class="bi bi-moon-fill" id="moon"></i>
+                    </button>
+                </li>
+                </ul>
+            </nav>
 
             <div class="row d-grid d-md-flex">
                 <div class="col-md-6 text-center text-md-start align-items-center">
@@ -58,52 +81,13 @@
         </header>
 
         <main class="bg-image">
-
-            <div class="d-flex position-fixed justify-content-center align-items-center mb-4"
-                style="bottom: 50%; right: 6px; z-index: 1050; width: 50px; height: 50px;">
-                <button type="button" class="btn-primary" id="btn-principal"
-                    style="width: 40px; height: 40px; border-radius: 8px;"><i
-                        class="bi bi-universal-access"></i></button>
-            </div>
-
-            <div class="d-flex position-fixed justify-content-center align-items-center mb-4"
-                style="bottom:50%; right: 60px; z-index:1050; width: 50px; height: 50px">
-                <button type="button" class="btn-secondary btn-off"
-                    style="width: 40px; height: 40px; border-radius: 50%;">
-                    <a href="#contraste" class="text-white" id="contraste">
-                        <i class="bi bi-lightbulb"></i>
-                    </a>
-                </button>
-            </div>
-
-            <div class="d-flex position-fixed justify-content-center align-items-center mb-4"
-                style="bottom:50%; right: 105px; z-index:1050; width: 50px; height: 50px">
-                <button type="button" class="btn-secondary btn-off d-flex justify-content-center align-items-center"
-                    id="btnMinFonte" style="width: 40px; height: 40px; border-radius: 50%;;">
-                    <a class="text-white fs-6" style="text-decoration: none;">
-                        A-
-                    </a>
-                </button>
-            </div>
-
-            <div class="d-flex position-fixed justify-content-center align-items-center mb-4"
-                style="bottom:50%; right: 150px; z-index:1050; width: 50px; height: 50px">
-                <button type="button" class="btn-secondary btn-off d-flex justify-content-center align-items-center"
-                    id="btnMaxFonte" style="width: 40px; height: 40px; border-radius: 50%;;">
-                    <a class="text-white fs-6" style="text-decoration: none;">
-                        A+
-                    </a>
-                </button>
-            </div>
-
-
             <section class="container-fluid py-5">
 
                 <div class="container mt-5">
                     <div class="row gx-5 align-items-center justify-content-center">
                         <div id="titleFirstSession" class="col-lg-6 mb-5 mb-lg-0 text-center text-lg-start">
                             <h1 class="display-4 fw-bolder tituloCor"> DIÁRIO</h1>
-                            <h2 class="display-1 fw-bold subtCor" >OFICIAL</h2>
+                            <h2 class="display-1 fw-bold subtCor">OFICIAL</h2>
                             <h3 class="lead" style="margin:40px auto">
                                 Veículo oficial de publicação, divulgação e comunicação dos atos administrativos da
                                 Prefeitura
@@ -437,7 +421,7 @@
                     </div>
 
                     <nav class="d-flex justify-content-center align-items-center mt-5">
-                        <ul class="pagination pagination-sm" id="pages">
+                        <ul class="pagination pagination-sm gap-3" id="pages">
                             <li class="page-item"><a class="page-link" href="#">1</a></li>
                             <li class="page-item active"><a class="page-link" href="#">2</a></li>
                             <li class="page-item"><a class="page-link" href="#">3</a></li>
@@ -452,7 +436,7 @@
 
     </div>
 
-    <footer class="text-white py-5 footerColor">
+    <footer class="text-white py-5 footerColor" id="rodape">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-4 text-center mb-4 mb-md-0">
