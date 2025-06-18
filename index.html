@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR" id="htmlDark" data-bs-theme="light">
+<html lang="pt-BR" data-bs-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -21,67 +21,58 @@
     <title>Diário Oficial de Caraguatatuba</title>
 </head>
 
-<body class="poppins-extralight darkMode">
-    <div>
-
-
-        <header class="container-fluid">
-
-            <nav class="d-flex flex-wrap justify-content-between px-0 mb-2 border-bottom" id="navAcessibilidade" style="height: 2rem; font-size: 0.7rem;">
+<body class="poppins-extralight">
+        
+            <nav class="container-fluid fw-bolder border-bottom d-flex justify-content-md-between fonteMaxMin" id="navAcessibilidade" style="height: 2rem; background-color: #F2F2F2; font-size: 0.8rem; ">
                 <div class="d-inline-block">
                     <ul class="nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#conteudo-principal">Ir para o conteúdo principal <i
+                            <a class="nav-link" href="#conteudo-principal" accesskey="1">Ir para o conteúdo principal <i
                                     class="bi bi-1-square-fill"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#consulta">Ir para a busca <i class="bi bi-2-square-fill"></i></a>
+                            <a class="nav-link" href="#consulta" accesskey="2">Ir para a busca <i class="bi bi-2-square-fill"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#rodape">Ir para o rodapé <i class="bi bi-3-square-fill"></i></a>
+                            <a class="nav-link" href="#rodape" accesskey="3">Ir para o rodapé <i class="bi bi-3-square-fill"></i></a>
                         </li>
                     </ul>
                 </div>
                 <div class="d-inline-block">
                      <ul class="nav">
                        <li class="nav-item">
-                            <a class="nav-link" href="#contraste" id="contraste">
-                                Alto contraste<i class="bi bi-4-square-fill"></i></a>
+                            <a class="nav-link" href="#contraste" id="contraste" accesskey="4">
+                                Alto contraste <i class="bi bi-4-square-fill"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#btnMaxFonte" id="btnMaxFonte">Aumentar fonte<i
+                            <a class="nav-link" href="#btnMaxFonte" id="btnMaxFonte" accesskey="5">Aumentar fonte <i
                                     class="bi bi-5-square-fill"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#btnMinFonte" id="btnMinFonte" style="text-decoration: none;">
+                            <a class="nav-link" href="#btnMinFonte" id="btnMinFonte" accesskey="6" style="text-decoration: none;">
                                 Diminuir fonte
                                 <i class="bi bi-6-square-fill"></i>
                             </a>
-                        </li>
-                        <li class="d-flex ps-5 fs-6">
-                            <button type="button" class="btn-outline-primary text-primary mt-1 me-2" id="btnDark"
-                                style="border: none;background: none;">
-                                <i class="bi bi-moon-fill" id="moon"></i>
-                            </button>
                         </li>
                     </ul>
 
                 </div>
             </nav>
-            
 
-            <div class="row d-md-flex">
-                <div class="col-md-6 text-center text-md-start align-items-center">
+        <header class="container-fluid d-md-flex justify-content-center justify-content-md-between" style="background-color: #F2F2F2;">
+            
+                <div class="col-md-6 d-flex justify-content-center justify-content-md-start align-items-center">
                     <a href="http://caraguatatuba.sp.gov.br/pmc"
-                        class="d-flex align-items-center text-dark text-decoration-none pe-3">
+                        class="text-decoration-none">
                         <img src="img/logo-2025.png" alt="brasão e logo oficial da Prefeitura de Caraguatatuba"
-                            class="img-fluid" style="max-height: 5rem;">
+                            class="img-fluid" style="max-height: 4rem;">
                     </a>
                 </div>
-                <div class="col-md-6 text-center text-md-end align-items-center pt-md-4">
-                    <p id="dataAtual" class="fw-bolder mb-0"></p>
+
+                <div class="col-md-6 d-flex justify-content-center justify-content-md-end align-items-center">
+                    <p id="dataAtual" class="fw-bolder mb-0 fonteMaxMin" style="font-size: 0.8rem;"></p>
                 </div>
-            </div>
+        
         </header>
 
         <main class="bg-image">
@@ -90,9 +81,9 @@
                 <div class="container mt-5">
                     <div class="row gx-5 align-items-center justify-content-center">
                         <div id="titleFirstSession" class="col-lg-6 mb-5 mb-lg-0 text-center text-lg-start">
-                            <h1 class="display-4 fw-bolder tituloCor"> DIÁRIO</h1>
-                            <h2 class="display-1 fw-bold subtCor">OFICIAL</h2>
-                            <h3 class="lead" style="margin:40px auto">
+                            <h1 class="display-4 fw-bolder tituloCor fonteMaxMin-t1"> DIÁRIO</h1>
+                            <h2 class="display-1 fw-bold subtCor fonteMaxMin-t2">OFICIAL</h2>
+                            <h3 class="lead fonteMaxMin-t3" style="margin:40px auto">
                                 Veículo oficial de publicação, divulgação e comunicação dos atos administrativos da
                                 Prefeitura
                                 Municipal de Caraguatatuba.
@@ -116,10 +107,10 @@
                             </div>
                         </div>
 
-                        <div class="col-auto text-center px-5 py-5">
+                        <div class="col-auto fs-5 text-center px-5 py-5">
 
                             <div class="d-md-none">
-                                <h2 class="fw-bold fs-5 mb-3" data-aos="zoom-in" data-aos-delay="0">ÚLTIMA EDIÇÃO
+                                <h2 class="fw-bold  mb-3 fonteMaxMin" data-aos="zoom-in" data-aos-delay="0">ÚLTIMA EDIÇÃO
                                 </h2>
                                 <h3 class="fw-bolder fs-6 mb-5" data-aos="zoom-in" data-aos-delay="100">Baixe
                                     a última publicação no diário oficial</h3>
@@ -149,7 +140,7 @@
                     <form action="cadastro.php" method="post" class="row align-items-center mx-auto" data-aos="fade-up">
                         <fieldset class="row align-items-center">
                             <div class="col-sm-12 text-center mb-3">
-                                <legend class="text-center fs-1 fw-bolder mb-5">Consultar Diário Oficial</legend>
+                                <legend class="text-center fs-1 fw-bolder mb-5"><h1 class="">Consultar Diário Oficial</h1></legend>
                                 <input type="text" id="palavra_chave" name="palavraChave"
                                     placeholder="Nome completo ou palavra-chave" class="form-control shadow-lg">
                             </div>
@@ -177,7 +168,7 @@
                     <div class="col-lg-12">
 
                         <div class="row" data-aos="fade-up">
-                            <h1 class="fs-1 fw-bolder text-center mt-5">Últimas Edições</h1>
+                            <h1 class="fw-bolder text-center mt-5">Últimas Edições</h1>
                         </div>
 
                         <div class="row align-items-center">
@@ -438,9 +429,9 @@
 
         </main>
 
-    </div>
+   
 
-    <footer class="text-white py-5 footerColor" id="rodape">
+    <footer class="text-white py-5 text-white fonteMaxMin" id="rodape" style="background-color: #2A3E59;">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-4 text-center mb-4 mb-md-0">

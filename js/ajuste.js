@@ -38,59 +38,50 @@ contraste.addEventListener('click', () => {
 
     //fonte size:
 
-let tamanhoAtual = 100
+let tamanhoAtual = 80
+let tamanhoAtualT1 = 400
+let tamanhoAtualT2 = 500
+let tamanhoAtualT3 = 150
+let tamanhoAtualConsulta = 150
 
-const btnMinFonte = document.getElementById("btnMaxFonte")
+const btnMaxFonte = document.getElementById("btnMaxFonte")
+const btnMinFonte = document.getElementById("btnMinFonte")
 
-btnMinFonte.addEventListener('click', () =>{
-    if(tamanhoAtual < 200) {
-        tamanhoAtual += 10
-        document.body.style.fontSize = tamanhoAtual + "%"
+const fonteMaxMin = document.querySelectorAll(".fonteMaxMin")
+const titulo1 = document.querySelector(".fonteMaxMin-t1")
+const titulo2 = document.querySelector(".fonteMaxMin-t2")
+const titulo3 = document.querySelector(".fonteMaxMin-t3")
+const consulta = document.querySelectorAll(".fonteMaxMin-consulta")
+
+
+btnMaxFonte.addEventListener('click', () =>{
+    if(tamanhoAtual < 200 || tamanhoAtualT1 < 800 || tamanhoAtualT2 < 800 || tamanhoAtualT3 < 500) {
+        tamanhoAtual += 5
+        tamanhoAtualT1 += 40
+        tamanhoAtualT2 += 40
+        tamanhoAtualT3 += 20
+    
+        fonteMaxMin.forEach((el) => {el.style.fontSize = tamanhoAtual + "%"})
+        titulo1.style.fontSize = tamanhoAtualT1 + "%"
+        titulo2.style.fontSize = tamanhoAtualT2 + "%"
+        titulo3.style.fontSize = tamanhoAtualT3 + "%"
+       
     }
 })
 
-const btnMaxFonte = document.getElementById("btnMinFonte")
 
-btnMaxFonte.addEventListener('click', () => {
-    if(tamanhoAtual > 50) {
-        tamanhoAtual -= 10
-        document.body.style.fontSize = tamanhoAtual + "%"
-    }
-})
+btnMinFonte.addEventListener('click', () => {
+    if(tamanhoAtual > 50 || tamanhoAtualT1 > 50 || tamanhoAtualT2 > 50 || tamanhoAtualT3 < 500) {
+        tamanhoAtual -= 5
+        tamanhoAtualT1 -= 40
+        tamanhoAtualT2 -= 40
+        tamanhoAtualT3 -= 20
+       
 
-
-// Dark mode:
-
-const btnDark = document.getElementById('btnDark')
-const darkHtml = document.getElementById('htmlDark')
-const darkBodyTitulo = document.querySelector('.tituloCor')
-const darkBodySub = document.querySelector('.subtCor')
-const darkBodyMain = document.querySelector('.bg-image')
-const darkBodyFooter = document.querySelector('.footerColor')
-const btnColor = document.querySelector('.btn-color')
-const iconDark = document.getElementById('moon')
-
-
-btnDark.addEventListener('click', () => {
-    if(darkHtml.dataset.bsTheme === 'light') {
-        darkHtml.dataset.bsTheme = 'dark'
-        darkBodyTitulo.classList.add('darkTitulo')
-        darkBodySub.classList.add('darkTitulo')
-        darkBodyMain.classList.add('darkModeBody')
-        darkBodyFooter.classList.add('darkModeFooter')
-        btnColor.classList.add('darkBtns')
-
-        btnDark.innerHTML = '<i class="bi bi-brightness-high-fill" id="moon"></i>'
-    }
-    else {
-        darkHtml.dataset.bsTheme = 'light'
-        darkBodyTitulo.classList.remove('darkTitulo')
-        darkBodySub.classList.remove('darkTitulo')
-        darkBodyMain.classList.remove('darkModeBody')
-        darkBodyFooter.classList.remove('darkModeFooter')
-        btnColor.classList.remove('darkBtns')  
-        
-        btnDark.innerHTML = '<i class="bi bi-moon-fill" id="moon"></i>'
+        fonteMaxMin.forEach((el) => {el.style.fontSize = tamanhoAtual + "%"})
+        titulo1.style.fontSize = tamanhoAtualT1 + "%"
+        titulo2.style.fontSize = tamanhoAtualT2 + "%"
+        titulo3.style.fontSize = tamanhoAtualT3 + "%"
     }
 })
 
