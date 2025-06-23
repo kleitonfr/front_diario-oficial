@@ -39,8 +39,7 @@ contraste.addEventListener('click', () => {
     //fonte size:
 
 let tamanhoPadraoPx = parseInt(getComputedStyle(document.documentElement).fontSize);
-let cardSize = document.querySelector(".fonteCard")
-let elementosCard = cardSize.querySelectorAll("p, small, h6")
+let cardSize = document.querySelectorAll(".fonteCard")
 
 let tamanhoAtualNav = (parseFloat(getComputedStyle(document.querySelector(".fonteMaxMinNav")).fontSize)) / tamanhoPadraoPx * 100
 let tamanhoAtualData = (parseFloat(getComputedStyle(document.querySelector(".fonteMaxMinData")).fontSize)) / tamanhoPadraoPx * 100
@@ -54,7 +53,7 @@ let tamanhoAtualT7 = (parseFloat(getComputedStyle(document.querySelector(".fonte
 let tamanhoAtualT8 = (parseFloat(getComputedStyle(document.querySelector(".fonteMaxMin-t8")).fontSize)) / tamanhoPadraoPx * 100
 let tamanhoAtualT9 = (parseFloat(getComputedStyle(document.querySelector(".fonteMaxMin-t9")).fontSize)) / tamanhoPadraoPx * 100
 let tamanhoAtualT10 = (parseFloat(getComputedStyle(document.querySelector(".fonteMaxMin-t10")).fontSize)) / tamanhoPadraoPx * 100
-let tamanhoAtualCard = elementosCard.forEach((el) => { parseFloat(getComputedStyle(el).fontSize)/tamanhoPadraoPx *100})
+let tamanhoAtualCard = (parseFloat(getComputedStyle(cardSize[0]).fontSize)) / tamanhoPadraoPx * 100
 
 
 const btnMaxFonte = document.getElementById("btnMaxFonte")
@@ -72,7 +71,7 @@ const fonteMaxMinT7 = document.querySelector(".fonteMaxMin-t7")
 const fonteMaxMinT8 = document.querySelector(".fonteMaxMin-t8")
 const fonteMaxMinT9 = document.querySelector(".fonteMaxMin-t9")
 const fonteMaxMinT10 = document.querySelector(".fonteMaxMin-t10")
-const fonteCard = elementosCard
+const fonteCard = document.querySelectorAll(".fonteCard")
 
 
 
@@ -139,9 +138,7 @@ btnMinFonte.addEventListener('click', () => {
     fonteMaxMinT8.style.fontSize = tamanhoAtualT8 + "%"
     fonteMaxMinT9.style.fontSize = tamanhoAtualT9 + "%"
     fonteMaxMinT10.style.fontSize = tamanhoAtualT10 + "%"
-    fonteCard.style.fontSize = tamanhoAtualCard + "%"
-    
-    
+    fonteCard.forEach((el) => el.style.fontSize = tamanhoAtualCard + "%")
 })
 
 
