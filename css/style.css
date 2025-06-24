@@ -17,6 +17,15 @@ html{
   font-style: normal;
 }
 
+h1.titulo-diario {
+  font-size: clamp(2rem, 8vw, 6em);
+  font-weight: 700;
+}
+
+h2.titulo-oficial {
+  font-size: clamp(2.5rem, 12vw, 8em);
+  font-weight: 800;
+}
 
 
 .tituloCor {
@@ -32,7 +41,6 @@ html{
 
 .contrast nav{
   background-color: black  !important;
-  color: white !important;
   border-bottom: 1px solid;
   border-color: white !important;
 }
@@ -81,6 +89,12 @@ html{
   color: yellow !important;
 }
 
+.contrast ul {
+  background-color: black !important;
+  border-color: white !important;
+  color: yellow !important;
+}
+
 .contrast footer {
   background-color: black !important;
   color: white !important;
@@ -122,7 +136,7 @@ html{
   left:0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, rgba(202, 228, 238, 0.664), rgba(88, 97, 100, 0.623));
+  background: linear-gradient(to bottom, rgba(235, 240, 243, 0.767), rgba(43, 89, 105, 0.623));
   z-index: 2;
 }
 

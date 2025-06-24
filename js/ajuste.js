@@ -86,7 +86,7 @@ btnMaxFonte.addEventListener('click', () =>{
     if(tamanhoAtualNav <= 150) tamanhoAtualNav += 10
     if(tamanhoAtualHeader <= 150) tamanhoAtualHeader += 10
     if(tamanhoAtualT1 <= 800) tamanhoAtualT1 += 30
-    if(tamanhoAtualT2 <= 800) tamanhoAtualT2 += 30
+    if(tamanhoAtualT2 <= 1000) tamanhoAtualT2 += 30
     if(tamanhoAtualT3 <= 400) tamanhoAtualT3 += 20
     if(tamanhoAtualT4 <= 150) tamanhoAtualT4 += 10
     if(tamanhoAtualT5 <= 150) tamanhoAtualT5 += 10
