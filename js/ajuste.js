@@ -42,7 +42,7 @@ let tamanhoPadraoPx = parseInt(getComputedStyle(document.documentElement).fontSi
 let cardSize = document.querySelectorAll(".fonteCard")
 
 let tamanhoAtualNav = (parseFloat(getComputedStyle(document.querySelector(".fonteMaxMinNav")).fontSize)) / tamanhoPadraoPx * 100
-let tamanhoAtualData = (parseFloat(getComputedStyle(document.querySelector(".fonteMaxMinData")).fontSize)) / tamanhoPadraoPx * 100
+let tamanhoAtualHeader = (parseFloat(getComputedStyle(document.querySelector(".fonteMaxMinHeader")).fontSize)) / tamanhoPadraoPx * 100
 let tamanhoAtualT1 = (parseFloat(getComputedStyle(document.querySelector(".fonteMaxMin-t1")).fontSize)) / tamanhoPadraoPx * 100
 let tamanhoAtualT2 = (parseFloat(getComputedStyle(document.querySelector(".fonteMaxMin-t2")).fontSize)) / tamanhoPadraoPx * 100
 let tamanhoAtualT3 = (parseFloat(getComputedStyle(document.querySelector(".fonteMaxMin-t3")).fontSize)) / tamanhoPadraoPx * 100
@@ -54,13 +54,17 @@ let tamanhoAtualT8 = (parseFloat(getComputedStyle(document.querySelector(".fonte
 let tamanhoAtualT9 = (parseFloat(getComputedStyle(document.querySelector(".fonteMaxMin-t9")).fontSize)) / tamanhoPadraoPx * 100
 let tamanhoAtualT10 = (parseFloat(getComputedStyle(document.querySelector(".fonteMaxMin-t10")).fontSize)) / tamanhoPadraoPx * 100
 let tamanhoAtualCard = (parseFloat(getComputedStyle(cardSize[0]).fontSize)) / tamanhoPadraoPx * 100
+let tamanhoFooter = (parseFloat(getComputedStyle(document.querySelector(".fonteMaxMinFooter")).fontSize)) / tamanhoPadraoPx * 100
+let tamanhoPaginacao = (parseFloat(getComputedStyle(document.querySelector(".fonteMaxMinPag")).fontSize)) / tamanhoPadraoPx * 100
+let tamanhoBtn1 = (parseFloat(getComputedStyle(document.querySelector(".fonteMaxMinBtn")).fontSize)) / tamanhoPadraoPx * 100
+let tamanhoBtn2 = (parseFloat(getComputedStyle(document.querySelector(".fonteMaxMinBtn2")).fontSize)) / tamanhoPadraoPx * 100
 
 
 const btnMaxFonte = document.getElementById("btnMaxFonte")
 const btnMinFonte = document.getElementById("btnMinFonte")
 
 const fonteMaxMinNav = document.querySelector(".fonteMaxMinNav")
-const fonteMaxMinData = document.querySelector(".fonteMaxMinData")
+const fonteMaxMinHeader = document.querySelector(".fonteMaxMinHeader")
 const fonteMaxMinT1 = document.querySelector(".fonteMaxMin-t1")
 const fonteMaxMinT2 = document.querySelector(".fonteMaxMin-t2")
 const fonteMaxMinT3 = document.querySelector(".fonteMaxMin-t3")
@@ -72,13 +76,15 @@ const fonteMaxMinT8 = document.querySelector(".fonteMaxMin-t8")
 const fonteMaxMinT9 = document.querySelector(".fonteMaxMin-t9")
 const fonteMaxMinT10 = document.querySelector(".fonteMaxMin-t10")
 const fonteCard = document.querySelectorAll(".fonteCard")
-
-
+const fonteMaxMinFooter = document.querySelector(".fonteMaxMinFooter")
+const fonteMaxMinPag = document.querySelector(".fonteMaxMinPag")
+const fonteMaxMinBtn = document.querySelector(".fonteMaxMinBtn")
+const fonteMaxMinBtn2 = document.querySelector(".fonteMaxMinBtn2")
 
 
 btnMaxFonte.addEventListener('click', () =>{
     if(tamanhoAtualNav <= 150) tamanhoAtualNav += 10
-    if(tamanhoAtualData <= 150) tamanhoAtualData += 10
+    if(tamanhoAtualHeader <= 150) tamanhoAtualHeader += 10
     if(tamanhoAtualT1 <= 800) tamanhoAtualT1 += 30
     if(tamanhoAtualT2 <= 800) tamanhoAtualT2 += 30
     if(tamanhoAtualT3 <= 400) tamanhoAtualT3 += 20
@@ -90,10 +96,14 @@ btnMaxFonte.addEventListener('click', () =>{
     if(tamanhoAtualT9 <= 150) tamanhoAtualT9 += 10
     if(tamanhoAtualT10 <= 600) tamanhoAtualT10 += 20
     if(tamanhoAtualCard <= 150) tamanhoAtualCard += 10
+    if(tamanhoFooter <= 200) tamanhoFooter += 10
+    if(tamanhoPaginacao <= 150) tamanhoPaginacao += 10
+    if(tamanhoBtn1 <= 150) tamanhoBtn1 +=10
+    if(tamanhoBtn2 <= 150) tamanhoBtn2 +=10
   
 
     fonteMaxMinNav.style.fontSize = tamanhoAtualNav + "%"
-    fonteMaxMinData.style.fontSize = tamanhoAtualData + "%"
+    fonteMaxMinHeader.style.fontSize = tamanhoAtualHeader + "%"
     fonteMaxMinT1.style.fontSize = tamanhoAtualT1 + "%"
     fonteMaxMinT2.style.fontSize = tamanhoAtualT2 + "%"
     fonteMaxMinT3.style.fontSize = tamanhoAtualT3 + "%"
@@ -105,14 +115,16 @@ btnMaxFonte.addEventListener('click', () =>{
     fonteMaxMinT9.style.fontSize = tamanhoAtualT9 + "%"
     fonteMaxMinT10.style.fontSize = tamanhoAtualT10 + "%"
     fonteCard.forEach((el) => el.style.fontSize = tamanhoAtualCard + "%")
-    
-
+    fonteMaxMinFooter.style.fontSize = tamanhoFooter + "%"
+    fonteMaxMinPag.style.fontSize = tamanhoFooter + "%"
+    fonteMaxMinBtn.style.fontSize = tamanhoBtn1 + "%"
+    fonteMaxMinBtn2.style.fontSize = tamanhoBtn2 + "%"
 })
 
 
 btnMinFonte.addEventListener('click', () => {
     if(tamanhoAtualNav >= 50 ) tamanhoAtualNav -= 10
-    if(tamanhoAtualData >= 50) tamanhoAtualData -= 10
+    if(tamanhoAtualHeader >= 50) tamanhoAtualHeader -= 10
     if(tamanhoAtualT1 >= 100) tamanhoAtualT1 -= 30
     if(tamanhoAtualT2 >= 100) tamanhoAtualT2 -= 30
     if(tamanhoAtualT3 >= 100) tamanhoAtualT3 -= 20
@@ -124,10 +136,14 @@ btnMinFonte.addEventListener('click', () => {
     if(tamanhoAtualT9 >= 50) tamanhoAtualT9 -= 10
     if(tamanhoAtualT10 >= 50) tamanhoAtualT10 -= 20
     if(tamanhoAtualCard >= 50) tamanhoAtualCard -= 10
+    if(tamanhoFooter >= 50) tamanhoFooter -= 10
+    if(tamanhoPaginacao >= 50) tamanhoPaginacao -= 10
+    if(tamanhoBtn1 >= 50) tamanhoBtn1 -= 10
+    if(tamanhoBtn2 >= 50) tamanhoBtn2 -= 10
   
    
     fonteMaxMinNav.style.fontSize = tamanhoAtualNav + "%"
-    fonteMaxMinData.style.fontSize = tamanhoAtualData + "%"
+    fonteMaxMinHeader.style.fontSize = tamanhoAtualHeader + "%"
     fonteMaxMinT1.style.fontSize = tamanhoAtualT1 + "%"
     fonteMaxMinT2.style.fontSize = tamanhoAtualT2 + "%"
     fonteMaxMinT3.style.fontSize = tamanhoAtualT3 + "%"
@@ -139,6 +155,10 @@ btnMinFonte.addEventListener('click', () => {
     fonteMaxMinT9.style.fontSize = tamanhoAtualT9 + "%"
     fonteMaxMinT10.style.fontSize = tamanhoAtualT10 + "%"
     fonteCard.forEach((el) => el.style.fontSize = tamanhoAtualCard + "%")
+    fonteMaxMinFooter.style.fontSize = tamanhoFooter + "%"
+    fonteMaxMinPag.style.fontSize = tamanhoFooter + "%"
+    fonteMaxMinBtn.style.fontSize = tamanhoBtn1 + "%"
+    fonteMaxMinBtn2.style.fontSize = tamanhoBtn2 + "%"
 })
 
 
