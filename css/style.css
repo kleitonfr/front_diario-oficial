@@ -165,13 +165,12 @@ transform: scaleY(1);
 }
 
 .overlayCard {
-  background-color: rgba(6, 64, 87, 0.651);
+  background-color: #064057a6;
   opacity: 0;
   bottom: 0;
   left:0;
   height: 100%;
   width: 100%;
-  cursor: pointer;
   transform: scaleY(0);
   transform-origin: bottom;
   transition: opacity 1.5s ease, transform 0.6s ease-in-out;
