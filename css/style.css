@@ -195,3 +195,74 @@ opacity: 1;
 transform: scaleY(1); 
 }
 
+#navAcessibilidade {
+  background-color: #F2F2F2;
+  font-size: 0.8rem;
+}
+
+#btnMinFonte {
+  text-decoration: none;
+}
+
+#dataAtual {
+  font-size: 0.8em;
+}
+
+#buttonFirstSession{
+  height: 50px;
+}
+
+#rodape {
+  background-color: #2A3E59;
+}
+
+.header {
+  background-color: #F2F2F2;
+}
+
+.img-size{
+  max-height: 4em;
+}
+
+.fonteMaxMin-t3 {
+  margin:40px auto;
+}
+
+.buttonUltimaEdicao{
+  background-color: #074a64;
+  color: #ffffff; 
+  border-color: #074a64; 
+  width: 184px; 
+  font-size: 1em;
+}
+
+.buttonConsulta{
+  border-color: #074a64;
+  width: 184px;
+  font-size: 1em;
+}
+
+.fonteMaxMin-t6{
+  font-size: 40px;
+}
+
+.fonteMaxMinBtn2{
+  padding-right: 34px;
+}
+
+.iconCard{
+  bottom: -40px;
+  font-size: 10rem;
+  opacity: 0.10;
+  pointer-events: none;
+  transform: rotate(45deg);
+}
+
+.imgLogo{
+  max-height: 123px;
+}
+
+/* deixar com fonte em 1em */
+.fontOnEm {
+  font-size: 1em;
+}

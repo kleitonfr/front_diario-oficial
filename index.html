@@ -24,7 +24,7 @@
 <body class="poppins-extralight">
 
     <nav class="container-fluid fw-bolder border-bottom d-flex flex-wrap justify-content-md-between fonteMaxMinNav"
-        id="navAcessibilidade" style="background-color: #F2F2F2; font-size: 0.8rem; ">
+        id="navAcessibilidade">
         <div class="col-6 col-md-auto">
             <ul class="nav justify-content-start flex-wrap">
                 <li class="nav-item">
@@ -52,8 +52,7 @@
                             class="bi bi-5-square-fill"></i></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#btnMinFonte" id="btnMinFonte" accesskey="6"
-                        style="text-decoration: none;">
+                    <a class="nav-link" href="#btnMinFonte" id="btnMinFonte" accesskey="6">
                         Diminuir fonte
                         <i class="bi bi-6-square-fill"></i>
                     </a>
@@ -64,18 +63,18 @@
     </nav>
 
 
-    <header class="container-fluid d-md-flex justify-content-center justify-content-md-between fonteMaxMinHeader"
-        style="background-color: #F2F2F2;">
+    <header
+        class="container-fluid d-md-flex justify-content-center justify-content-md-between fonteMaxMinHeader header">
 
         <div class="col-md-6 d-flex justify-content-center justify-content-md-start align-items-center">
             <a href="http://caraguatatuba.sp.gov.br/pmc" class="text-decoration-none">
                 <img src="img/logo-2025.png" alt="brasão e logo oficial da Prefeitura de Caraguatatuba"
-                    class="img-fluid" style="max-height: 4em;">
+                    class="img-fluid img-size">
             </a>
         </div>
 
         <div class="col-md-6 d-flex justify-content-center justify-content-md-end align-items-center">
-            <p id="dataAtual" class="fw-bolder mb-0" style="font-size: 0.8em;">
+            <p id="dataAtual" class="fw-bolder mb-0">
                 Data atual: <span class="data-dinamica">(carregando...)</span>
             </p>
         </div>
@@ -90,23 +89,21 @@
                     <div id="titleFirstSession" class="col-lg-6 mb-5 mb-lg-0 text-center text-lg-start">
                         <h1 class="fw-bolder tituloCor fonteMaxMin-t1 titulo-diario"> DIÁRIO</h1>
                         <h2 class="fw-bold subtCor fonteMaxMin-t2 titulo-oficial">OFICIAL</h2>
-                        <p class="lead fonteMaxMin-t3" style="margin:40px auto">
+                        <p class="lead fonteMaxMin-t3">
                             Veículo oficial de publicação, divulgação e comunicação dos atos administrativos da
                             Prefeitura
                             Municipal de Caraguatatuba.
                         </p>
 
                         <div id="buttonFirstSession"
-                            class="d-grid d-md-flex justify-content-center justify-content-lg-start  gap-3 gap-sm-5 fonteMaxMinBtn"
-                            style="height: 50px">
-                            <a href="" class="btn btn-outline-primary d-flex align-items-center justify-content-center"
-                                style="background-color: #074a64; color: #ffffff; border-color: #074a64; width: 184px; font-size: 1em">
+                            class="d-grid d-md-flex justify-content-center justify-content-lg-start  gap-3 gap-sm-5 fonteMaxMinBtn">
+                            <a href=""
+                                class="btn btn-outline-primary d-flex align-items-center justify-content-center buttonUltimaEdicao">
                                 <i class="bi bi-eye fw-bold me-2"></i>
                                 Última Edição
                             </a>
                             <a href="#consulta"
-                                class="btn btn-outline btn-color fw-bolder d-flex align-items-center justify-content-center"
-                                style="border-color: #074a64; width: 184px; font-size: 1em">
+                                class="btn btn-outline btn-color fw-bolder d-flex align-items-center justify-content-center buttonConsulta">
                                 <i class="bi bi-search fw-bold me-2"></i>
                                 Consultar
                             </a>
@@ -125,8 +122,7 @@
                         <div class="d-flex justify-content-center align-items-center overflow-hidden shadow-lg">
                             <div class="position-relative">
                                 <input type="image" src="img/edital.jpg" class="img-fluid" data-aos="zoom-in"
-                                    data-aos-delay="150" style="border-width: 0px; animation: unset;"
-                                    alt="primeira página da ultima edição do diário oficial">
+                                    data-aos-delay="150" alt="primeira página da ultima edição do diário oficial">
                                 <div class="overlay position-absolute d-flex justify-content-center align-items-center">
                                     <i class="bi bi-eyeglasses d-f text-white display-1 fw-bold"></i>
                                 </div>
@@ -146,7 +142,7 @@
                 <form action="cadastro.php" method="post" class="row align-items-center mx-auto" data-aos="fade-up">
                     <fieldset class="row align-items-center">
                         <legend class="text-center fw-bolder mb-5">
-                            <h2 class="fonteMaxMin-t6" style="font-size: 40px">Consultar Diário Oficial</h2>
+                            <h2 class="fonteMaxMin-t6">Consultar Diário Oficial</h2>
                         </legend>
                         <div class="col-sm-12 text-center mb-3">
                             <input type="text" id="palavra_chave" name="palavraChave"
@@ -162,9 +158,9 @@
                                 class="form-control shadow-lg fonteMaxMin-t9">
                         </div>
                     </fieldset>
-                    <div class="col-md-12 text-end mt-3 fonteMaxMinBtn2" style="padding-right: 34px;">
-                        <button type="reset" class="btn btn-secondary me-2" style="font-size: 1em;">Limpar</button>
-                        <button type="submit" class="btn btn-primary" style="font-size: 1em;">Consultar</button>
+                    <div class="col-md-12 text-end mt-3 fonteMaxMinBtn2">
+                        <button type="reset" class="btn btn-secondary me-2 fontOnEm">Limpar</button>
+                        <button type="submit" class="btn btn-primary fontOnEm">Consultar</button>
                     </div>
                 </form>
             </div>
@@ -185,13 +181,12 @@
                         <div class="col-md-3 gy-5  fonteCard" data-aos="fade-right" data-aos-delay="0">
                             <div class="card border-info position-relative shadow-lg overflow-hidden h-100">
                                 <div class="card-body mb-4">
-                                    <h3 class="fw-bold text-dark mb-1" style="font-size: 1em;">Diário Oficial do dia
+                                    <h3 class="fw-bold text-dark mb-1 fontOnEm">Diário Oficial do dia
                                     </h3>
-                                    <h3 class="mb-0" style="font-size: 1em;">22/05/2025</h3>
-                                    <small class="text-muted" style="font-size: 1em">Edição nº 2162</small>
+                                    <h3 class="mb-0 fontOnEm">22/05/2025</h3>
+                                    <small class="text-muted fontOnEm">Edição nº 2162</small>
                                     <div>
-                                        <i class="bi bi-newspaper position-absolute end-0 text-primary"
-                                            style="bottom: -40px; font-size: 10rem; opacity: 0.10; pointer-events: none; transform: rotate(45deg);"></i>
+                                        <i class="bi bi-newspaper position-absolute end-0 text-primary iconCard"></i>
                                     </div>
                                 </div>
 
@@ -215,13 +210,12 @@
                         <div class="col-md-3 gy-5 fonteCard" data-aos="fade-right" data-aos-delay="100">
                             <div class="card border-info shadow-lg position-relative overflow-hidden h-100">
                                 <div class="card-body mb-4">
-                                    <h3 class="fw-bold text-dark mb-1" style="font-size: 1em;">Diário Oficial do dia
+                                    <h3 class="fw-bold text-dark mb-1 fontOnEm">Diário Oficial do dia
                                     </h3>
-                                    <h3 class="mb-0" style="font-size: 1em;">22/05/2025</h3>
-                                    <small class="text-muted" style="font-size: 1em">Edição nº 2162</small>
+                                    <h3 class="mb-0 fontOnEm">22/05/2025</h3>
+                                    <small class="text-muted fontOnEm">Edição nº 2162</small>
                                     <div>
-                                        <i class="bi bi-newspaper position-absolute end-0 text-primary"
-                                            style="bottom: -40px; font-size: 10rem; opacity: 0.10; pointer-events: none; transform: rotate(45deg);"></i>
+                                        <i class="bi bi-newspaper position-absolute end-0 text-primary iconCard"></i>
                                     </div>
                                 </div>
 
@@ -245,13 +239,12 @@
                         <div class="col-md-3 gy-5 fonteCard" data-aos="fade-right" data-aos-delay="200">
                             <div class="card border-info  shadow-lg position-relative overflow-hidden h-100">
                                 <div class="card-body mb-4">
-                                    <h3 class="fw-bold text-dark mb-1" style="font-size: 1em;">Diário Oficial do dia
+                                    <h3 class="fw-bold text-dark mb-1 fontOnEm">Diário Oficial do dia
                                     </h3>
-                                    <h3 class="mb-0" style="font-size: 1em;">22/05/2025</h3>
-                                    <small class="text-muted" style="font-size: 1em">Edição nº 2162</small>
+                                    <h3 class="mb-0 fontOnEm">22/05/2025</h3>
+                                    <small class="text-muted fontOnEm">Edição nº 2162</small>
                                     <div>
-                                        <i class="bi bi-newspaper position-absolute end-0 text-primary"
-                                            style="bottom: -40px; font-size: 10rem; opacity: 0.10; pointer-events: none; transform: rotate(45deg);"></i>
+                                        <i class="bi bi-newspaper position-absolute end-0 text-primary iconCard"></i>
                                     </div>
                                 </div>
 
@@ -275,13 +268,12 @@
                         <div class="col-md-3 gy-5 fonteCard" data-aos="fade-right" data-aos-delay="300">
                             <div class="card border-info  shadow-lg position-relative overflow-hidden h-100">
                                 <div class="card-body mb-4">
-                                    <h3 class="fw-bold text-dark mb-1" style="font-size: 1em;">Diário Oficial do dia
+                                    <h3 class="fw-bold text-dark mb-1 fontOnEm">Diário Oficial do dia
                                     </h3>
-                                    <h3 class="mb-0" style="font-size: 1em;">22/05/2025</h3>
-                                    <small class="text-muted" style="font-size: 1em">Edição nº 2162</small>
+                                    <h3 class="mb-0 fontOnEm">22/05/2025</h3>
+                                    <small class="text-muted fontOnEm">Edição nº 2162</small>
                                     <div>
-                                        <i class="bi bi-newspaper position-absolute end-0 text-primary"
-                                            style="bottom: -40px; font-size: 10rem; opacity: 0.10; pointer-events: none; transform: rotate(45deg);"></i>
+                                        <i class="bi bi-newspaper position-absolute end-0 text-primary iconCard"></i>
                                     </div>
                                 </div>
 
@@ -310,13 +302,12 @@
                         <div class="col-md-3 gy-5 fonteCard" data-aos="fade-right" data-aos-delay="400">
                             <div class="card border-info  shadow-lg position-relative overflow-hidden h-100">
                                 <div class="card-body mb-4">
-                                    <h3 class="fw-bold text-dark mb-1" style="font-size: 1em;">Diário Oficial do dia
+                                    <h3 class="fw-bold text-dark mb-1 fontOnEm">Diário Oficial do dia
                                     </h3>
-                                    <h3 class="mb-0" style="font-size: 1em;">22/05/2025</h3>
-                                    <small class="text-muted" style="font-size: 1em">Edição nº 2162</small>
+                                    <h3 class="mb-0 fontOnEm">22/05/2025</h3>
+                                    <small class="text-muted fontOnEm">Edição nº 2162</small>
                                     <div>
-                                        <i class="bi bi-newspaper position-absolute end-0 text-primary"
-                                            style="bottom: -40px; font-size: 10rem; opacity: 0.10; pointer-events: none; transform: rotate(45deg);"></i>
+                                        <i class="bi bi-newspaper position-absolute end-0 text-primary iconCard"></i>
                                     </div>
                                 </div>
 
@@ -340,13 +331,12 @@
                         <div class="col-md-3 gy-5 fonteCard" data-aos="fade-right" data-aos-delay="500">
                             <div class="card border-info  shadow-lg position-relative overflow-hidden h-100">
                                 <div class="card-body mb-4">
-                                    <h3 class="fw-bold text-dark mb-1" style="font-size: 1em;">Diário Oficial do dia
+                                    <h3 class="fw-bold text-dark mb-1 fontOnEm">Diário Oficial do dia
                                     </h3>
-                                    <h3 class="mb-0" style="font-size: 1em;">22/05/2025</h3>
-                                    <small class="text-muted" style="font-size: 1em">Edição nº 2162</small>
+                                    <h3 class="mb-0 fontOnEm">22/05/2025</h3>
+                                    <small class="text-muted fontOnEm">Edição nº 2162</small>
                                     <div>
-                                        <i class="bi bi-newspaper position-absolute end-0 text-primary"
-                                            style="bottom: -40px; font-size: 10rem; opacity: 0.10; pointer-events: none; transform: rotate(45deg);"></i>
+                                        <i class="bi bi-newspaper position-absolute end-0 text-primary iconCard"></i>
                                     </div>
                                 </div>
 
@@ -370,13 +360,12 @@
                         <div class="col-md-3 gy-5 fonteCard" data-aos="fade-right" data-aos-delay="600">
                             <div class="card border-info  shadow-lg position-relative overflow-hidden h-100">
                                 <div class="card-body mb-4">
-                                    <h3 class="fw-bold text-dark mb-1" style="font-size: 1em;">Diário Oficial do dia
+                                    <h3 class="fw-bold text-dark mb-1 fontOnEm">Diário Oficial do dia
                                     </h3>
-                                    <h3 class="mb-0" style="font-size: 1em;">22/05/2025</h3>
-                                    <small class="text-muted" style="font-size: 1em">Edição nº 2162</small>
+                                    <h3 class="mb-0 fontOnEm">22/05/2025</h3>
+                                    <small class="text-muted fontOnEm">Edição nº 2162</small>
                                     <div>
-                                        <i class="bi bi-newspaper position-absolute end-0 text-primary"
-                                            style="bottom: -40px; font-size: 10rem; opacity: 0.10; pointer-events: none; transform: rotate(45deg);"></i>
+                                        <i class="bi bi-newspaper position-absolute end-0 text-primary iconCard"></i>
                                     </div>
                                 </div>
 
@@ -400,13 +389,12 @@
                         <div class="col-md-3 gy-5 fonteCard" data-aos="fade-right" data-aos-delay="700">
                             <div class="card border-info  shadow-lg position-relative overflow-hidden h-100">
                                 <div class="card-body mb-4">
-                                    <h3 class="fw-bold text-dark mb-1" style="font-size: 1em;">Diário Oficial do dia
+                                    <h3 class="fw-bold text-dark mb-1 fontOnEm">Diário Oficial do dia
                                     </h3>
-                                    <h3 class="mb-0" style="font-size: 1em;">22/05/2025</h3>
-                                    <small class="text-muted" style="font-size: 1em">Edição nº 2162</small>
+                                    <h3 class="mb-0 fontOnEm">22/05/2025</h3>
+                                    <small class="text-muted fontOnEm">Edição nº 2162</small>
                                     <div>
-                                        <i class="bi bi-newspaper position-absolute end-0 text-primary"
-                                            style="bottom: -40px; font-size: 10rem; opacity: 0.10; pointer-events: none; transform: rotate(45deg);"></i>
+                                        <i class="bi bi-newspaper position-absolute end-0 text-primary iconCard"></i>
                                     </div>
                                 </div>
 
@@ -423,7 +411,7 @@
                                             <h3 class="text-start ps-md-1 fs-6">ODT</h3>
                                         </div>
                                     </div>
-                                    
+
                                 </div>
                             </div>
                         </div>
@@ -434,9 +422,9 @@
 
                 <nav class="d-flex justify-content-center align-items-center mt-5 fonteMaxMinPag">
                     <ul class="pagination pagination-sm gap-3" id="pages">
-                        <li class="page-item"><a class="page-link" href="#" style="font-size: 1em;">1</a></li>
-                        <li class="page-item active"><a class="page-link" href="#" style="font-size: 1em;">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#" style="font-size: 1em;">3</a></li>
+                        <li class="page-item"><a class="page-link fontOnEm" href="#">1</a></li>
+                        <li class="page-item active"><a class="page-link fontOnEm" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link fontOnEm" href="#">3</a></li>
                     </ul>
                 </nav>
 
@@ -448,30 +436,30 @@
 
 
 
-    <footer class="text-white py-5 text-white fonteMaxMinFooter" id="rodape" style="background-color: #2A3E59;">
+    <footer class="text-white py-5 text-white fonteMaxMinFooter" id="rodape">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-4 text-center mb-4 mb-md-0">
-                    <img src="img/prefeitura-de-caraguatatuba-seeklogo.svg" alt="logo da Prefeitura" class="img-fluid"
-                        style="max-height: 123px;">
+                    <img src="img/prefeitura-de-caraguatatuba-seeklogo.svg" alt="logo da Prefeitura"
+                        class="img-fluid imgLogo">
                 </div>
                 <div class="col-md-4 text-center text-md-start border-start border-end border-white">
                     <ul class="list-unstyled ps-3">
                         <li class="mb-2"><a href="https://www.caraguatatuba.sp.gov.br/pmc/fale-conosco/"
-                                class="text-decoration-none text-white" style="font-size: 1em;">FALE CONOSCO</a></li>
+                                class="text-decoration-none text-white fontOnEm">FALE CONOSCO</a></li>
                         <li class="mb-2"><a
                                 href="https://www.caraguatatuba.sp.gov.br/pmc/mapa-do-site-portal-da-transparencia/"
-                                class="text-decoration-none text-white" style="font-size: 1em;">MAPA DO SITE - PORTAL DA
+                                class="text-decoration-none text-white fontOnEm">MAPA DO SITE - PORTAL DA
                                 TRANSPARÊNCIA</a></li>
                         <li><a href="https://www.caraguatatuba.sp.gov.br/pmc/mapa-do-site-noticias-e-servicos/"
-                                class="text-decoration-none text-white" style="font-size: 1em;">MAPA DO SITE - NOTÍCIAS
+                                class="text-decoration-none text-white fontOnEm">MAPA DO SITE - NOTÍCIAS
                                 E SERVIÇOS</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4 text-center text-md-start">
                     <div class="d-flex align-items-center mb-2 justify-content-center">
                         <i class="bi bi-box-arrow-in-right fs-4 me-2"></i>
-                        <span class="fw-bold" style="font-size: 1em;">NOS SIGA NAS <span class="fw-bolder">REDES
+                        <span class="fw-bold fontOnEm">NOS SIGA NAS <span class="fw-bolder">REDES
                                 SOCIAIS</span></span>
                     </div>
                     <div class="d-flex gap-3 justify-content-center">
@@ -497,6 +485,8 @@
         </script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <!-- Vlibras-->
+
+    <script src="js/ajuste.js"></script>
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
         <div vw-plugin-wrapper>
@@ -507,8 +497,6 @@
     <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
-    <script src="js/ajuste.js"></script>
-
 </body>
 
 </html>
