@@ -22,7 +22,7 @@
 </head>
 
 <body class="poppins-extralight">
-    
+
     <div class="container-fluid fw-bolder border-bottom d-flex flex-wrap justify-content-md-between fonteMaxMinNav"
         id="navAcessibilidade" role="navigation" aria-label="Navegação de acessibilidade">
 
@@ -155,16 +155,16 @@
                         <legend class="text-center fw-bolder mb-5">
                             <h2 class="fonteMaxMin-t6">Consultar Diário Oficial</h2>
                         </legend>
-                        <div class="col-sm-12 text-center mb-3">
+                        <div class="col-sm-12 text-center mb-3" aria-hidden="true">
                             <input type="text" id="palavra_chave" name="palavraChave"
                                 placeholder="Nome completo ou palavra-chave"
                                 class="form-control shadow-lg fonteMaxMin-t7">
                         </div>
-                        <div class="col-md-6 mb-3 text-center">
+                        <div class="col-md-6 mb-3 text-center" aria-hidden="true">
                             <input type="text" id="data_inicial" name="dataInicial" placeholder="Data inicial"
                                 class="form-control shadow-lg fonteMaxMin-t8">
                         </div>
-                        <div class="col-md-6 mb-3 text-center">
+                        <div class="col-md-6 mb-3 text-center" aria-hidden="true">
                             <input type="text" id="data_final" name="dataFinal" placeholder="Data final"
                                 class="form-control shadow-lg fonteMaxMin-t9">
                         </div>
@@ -506,10 +506,10 @@
     <!-- Vlibras-->
 
     <script src="js/ajuste.js"></script>
-    <div vw class="enabled">
-        <div vw-access-button class="active"></div>
-        <div vw-plugin-wrapper>
-            <div class="vw-plugin-top-wrapper"></div>
+    <div vw class="enabled" aria-hidden="true">
+        <div vw-access-button class="active" aria-hidden="true"></div>
+        <div vw-plugin-wrapper aria-hidden="true">
+            <div class="vw-plugin-top-wrapper" aria-hidden="true"></div>
         </div>
     </div>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>

@@ -39,7 +39,7 @@ h2.titulo-oficial {
 
 /* auto-contraste */
 
-.contrast nav{
+.contrast .fonteMaxMinNav{
   background-color: black  !important;
   border-bottom: 1px solid;
   border-color: white !important;
