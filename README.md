@@ -1,43 +1,56 @@
 # Diário Oficial - Prefeitura de Caraguatatuba
 
-Este repositório contém o novo frontend da página do **Diário Oficial da Prefeitura de Caraguatatuba**, desenvolvido com HTML, CSS, JavaScript e Bootstrap 5. O projeto visa modernizar a apresentação dos conteúdos oficiais, garantindo acessibilidade, responsividade e facilidade de navegação.
+Nova interface do **Diário Oficial Eletrônico** da Prefeitura Municipal de Caraguatatuba, desenvolvida com foco em modernidade, acessibilidade e experiência do usuário.
+
+> 🔗 Acesse: [caraguatatuba.sp.gov.br/pmc](http://caraguatatuba.sp.gov.br/pmc)
 
 ---
 
-## 📄 Funcionalidades
+## 🖼️ Interface
 
-- ✅ Página inicial responsiva com layout moderno
-- ✅ Barra de pesquisa para consulta por palavra-chave ou data
-- ✅ Sessão com últimas edições do Diário Oficial
-- ✅ Acessibilidade com V-Libras e menu de acessibilidade
-- ✅ Integração com componentes do Bootstrap (tooltips, grid, etc.)
-- ✅ Tooltip com ícones acessíveis e descrição por hover
+### Página Inicial
+![Página inicial](docs/img/pagina-inicial.png)
 
----
+### Consulta de edições
+![Formulário de busca](docs/img/consulta.png)
 
-## 🛠 Tecnologias Utilizadas
-
-- **HTML5**
-- **CSS3**
-- **JavaScript**
-- **Bootstrap 5**
-- **Google Fonts / Bootstrap Icons**
-- **Imagens institucionais e identidades visuais da Prefeitura**
+### Últimas publicações
+![Cards das edições](docs/img/ultimas-publicacoes.png)
 
 ---
 
-## 📁 Estrutura do Projeto
+## 🧰 Tecnologias Utilizadas
+
+- **HTML5 + CSS3**
+- **Bootstrap 5.3**
+- **JavaScript Vanilla**
+- **Bootstrap Icons**
+- **VLibras** (acessibilidade em Libras)
+- **Google Fonts**
+- Design responsivo, acessível e baseado em componentes reutilizáveis.
+
+---
+
+## ♿ Acessibilidade
+
+Este projeto foi avaliado pelo [ASES – Avaliador e Simulador de Acessibilidade de Sítios](https://asesweb.governoeletronico.gov.br/relatorioavaliacao) do Governo Federal com **98,12% de conformidade**.
+
+📄 [Ver Relatório Completo (PDF)](https://asesweb.governoeletronico.gov.br/relatorioavaliacao)
+
+**Principais recursos:**
+- Compatível com leitores de tela
+- Teclado navegável (tabindex, aria-labels)
+- Atalhos rápidos por teclado
+- VLibras integrado
+- Contraste e tamanho da fonte ajustáveis
+
+---
+
+## 🚀 Como Executar
+
+Você pode testar localmente da seguinte forma:
 
 ```bash
-front_diario-oficial-master/
-├── index.html
-├── css/
-│   └── style.css
-├── img/
-│   ├── logo-2025.png
-│   ├── edital.jpg
-│   ├── caraguatatuba.jpg
-│   └── ...
-├── package.json
-├── package-lock.json
-└── .gitignore
+git clone https://github.com/seu-usuario/front_diario-oficial-master.git
+cd front_diario-oficial-master
+start index.html
