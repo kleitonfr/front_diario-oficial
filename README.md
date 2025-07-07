@@ -2,20 +2,20 @@
 
 Nova interface do **Diário Oficial Eletrônico** da Prefeitura Municipal de Caraguatatuba, desenvolvida com foco em modernidade, acessibilidade e experiência do usuário.
 
-> 🔗 Acesse: [caraguatatuba.sp.gov.br/pmc](http://caraguatatuba.sp.gov.br/pmc)
+> 🔗 Acesse:(https://kleitonfr.github.io/front_diario-oficial/)
 
 ---
 
 ## 🖼️ Interface
 
 ### Página Inicial
-![Página inicial](docs/img/pagina-inicial.png)
+![alt text](img/image-4.png)
 
 ### Consulta de edições
-![Formulário de busca](docs/img/consulta.png)
+![alt text](img/image-2.png)
 
 ### Últimas publicações
-![Cards das edições](docs/img/ultimas-publicacoes.png)
+![alt text](img/image-3.png)
 
 ---
 
@@ -35,7 +35,7 @@ Nova interface do **Diário Oficial Eletrônico** da Prefeitura Municipal de Car
 
 Este projeto foi avaliado pelo [ASES – Avaliador e Simulador de Acessibilidade de Sítios](https://asesweb.governoeletronico.gov.br/relatorioavaliacao) do Governo Federal com **98,12% de conformidade**.
 
-📄 [Ver Relatório Completo (PDF)](https://asesweb.governoeletronico.gov.br/relatorioavaliacao)
+📄 ![alt text](img/RelatorioAvaliacao_page-0001.jpg)
 
 **Principais recursos:**
 - Compatível com leitores de tela
